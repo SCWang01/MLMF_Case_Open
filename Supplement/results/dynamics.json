@@ -1,0 +1,1822 @@
+{
+ "schedules": {
+  "time_varying": {
+   "windows": [
+    {
+     "window": 1,
+     "mass": 1.0,
+     "n_states": 1,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.49640834284020996,
+      0.11147947538528705
+     ],
+     "p_pure": 0.0,
+     "max_regret": 160.8422205589071,
+     "vppo_cash": [
+      1880.3090642759928,
+      89.1577794410929
+     ],
+     "vppo_forecast": [
+      1880.3090642759928,
+      89.15777944109291
+     ],
+     "der_gain": 2540.5220072027496,
+     "switches": 0.19262378916482703,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 2,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.42099295381365753,
+      0.09897814983513067
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 46.497107756366574,
+     "vppo_cash": [
+      1825.8044345694047,
+      572.3969768030365
+     ],
+     "vppo_forecast": [
+      1757.8858849430037,
+      521.5599274624083
+     ],
+     "der_gain": 2209.1418511850793,
+     "switches": 1.192623789164827,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 3,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5717898508853827,
+      0.09914072539282166
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 35.19364113952937,
+     "vppo_cash": [
+      2620.2887815111203,
+      209.08942838331942
+     ],
+     "vppo_forecast": [
+      2512.678817273828,
+      258.5549830358723
+     ],
+     "der_gain": 1580.7384947870153,
+     "switches": 0.5778713674944811,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 4,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5696236815073382,
+      0.11118640126614154
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 78.73315178231022,
+     "vppo_cash": [
+      2647.188844180002,
+      398.4389123971937
+     ],
+     "vppo_forecast": [
+      2423.67386377099,
+      591.6250123392017
+     ],
+     "der_gain": 1561.7155059803242,
+     "switches": 0.5778713674944811,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 5,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5252856104417062,
+      0.09794504223213385
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 45.6841995638908,
+     "vppo_cash": [
+      2445.1708263991586,
+      566.2674071295048
+     ],
+     "vppo_forecast": [
+      2339.038495383025,
+      514.9557034490789
+     ],
+     "der_gain": 1780.7132223501283,
+     "switches": 1.192623789164827,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 6,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.9014844019022136,
+      0.09171165339820377
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 44.48638252945358,
+     "vppo_cash": [
+      4310.895877506005,
+      353.9548522255026
+     ],
+     "vppo_forecast": [
+      4204.13502899085,
+      299.77925996939587
+     ],
+     "der_gain": 128.20813238926982,
+     "switches": 0.38524757832965406,
+     "p_empty_vpp": 0.807376210835173
+    },
+    {
+     "window": 7,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8910984276482695,
+      0.09183863428512702
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 27.364949409655917,
+     "vppo_cash": [
+      4340.789998273495,
+      252.48575030011108
+     ],
+     "vppo_forecast": [
+      4231.744802194814,
+      291.2142419390204
+     ],
+     "der_gain": 2.556555671106032,
+     "switches": 0.5778713674944811,
+     "p_empty_vpp": 0.807376210835173
+    },
+    {
+     "window": 8,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8960387906219427,
+      0.09834723358954003
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 59.98492473340312,
+     "vppo_cash": [
+      4453.467042854487,
+      369.11179035415734
+     ],
+     "vppo_forecast": [
+      4227.851049205788,
+      528.8683229083163
+     ],
+     "der_gain": -29.519971087867553,
+     "switches": 0.5778713674944811,
+     "p_empty_vpp": 0.807376210835173
+    },
+    {
+     "window": 9,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.9081956004425997,
+      0.09794504223213388
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 45.68419956381249,
+     "vppo_cash": [
+      4327.672024111124,
+      364.4233544207117
+     ],
+     "vppo_forecast": [
+      4221.539693094988,
+      313.11165074028577
+     ],
+     "der_gain": 100.05607734695649,
+     "switches": 0.38524757832965406,
+     "p_empty_vpp": 0.807376210835173
+    },
+    {
+     "window": 10,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.9010992348113644,
+      0.09171165339819307
+     ],
+     "p_pure": 0.807376210835173,
+     "max_regret": 44.48638266049878,
+     "vppo_cash": [
+      4309.002279493269,
+      353.95485222547813
+     ],
+     "vppo_forecast": [
+      4202.241430985331,
+      299.77925996936654
+     ],
+     "der_gain": 130.10173040202926,
+     "switches": 0.38524757832965406,
+     "p_empty_vpp": 0.807376210835173
+    }
+   ],
+   "states": [
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      2,
+      1,
+      1
+     ],
+     "x": [
+      0.49640834284020996,
+      0.11147947538528705
+     ],
+     "max_regret": 160.8422205589071,
+     "pure": false,
+     "lower": 160.8421434599357,
+     "upper": 160.8422205589071,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 5,
+     "seconds": 0.6570000000065193
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      0,
+      0
+     ],
+     "x": [
+      0.40067333078424766,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 0.48399999999674037
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      3,
+      0
+     ],
+     "x": [
+      0.5061619784612097,
+      0.5138417755370582
+     ],
+     "max_regret": 241.38818968294345,
+     "pure": false,
+     "lower": 241.3881896820452,
+     "upper": 241.38818968294345,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.375
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      2,
+      4,
+      0,
+      4,
+      3
+     ],
+     "x": [
+      0.581482950149203,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.0940000000409782
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      0,
+      0,
+      4,
+      3
+     ],
+     "x": [
+      0.5311615474509827,
+      0.514685781141952
+     ],
+     "max_regret": 182.7066183887307,
+     "pure": false,
+     "lower": 182.70661838797957,
+     "upper": 182.7066183887307,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 0.7969999999622814
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      1,
+      3,
+      4,
+      3,
+      2
+     ],
+     "x": [
+      0.5536091538207825,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.125
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      4,
+      4,
+      3,
+      2
+     ],
+     "x": [
+      0.6367480420961666,
+      0.5772205071254205
+     ],
+     "max_regret": 408.7405409460548,
+     "pure": false,
+     "lower": 408.7405409456057,
+     "upper": 408.7405409460548,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 5,
+     "seconds": 2.375
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      0,
+      2,
+      3,
+      2,
+      1
+     ],
+     "x": [
+      0.5257353574923619,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 0.25
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      3,
+      3,
+      4,
+      1
+     ],
+     "x": [
+      0.5234005106252863,
+      0.508478431749273
+     ],
+     "max_regret": 237.1680038170109,
+     "pure": false,
+     "lower": 237.1680038157042,
+     "upper": 237.1680038170109,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.375
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      4,
+      1,
+      2,
+      1,
+      4
+     ],
+     "x": [
+      1.0,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.0
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      2,
+      3,
+      0
+     ],
+     "x": [
+      0.48855954643542393,
+      0.4761180007715799
+     ],
+     "max_regret": 230.9495764896767,
+     "pure": false,
+     "lower": 230.94957648901533,
+     "upper": 230.9495764896767,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 0.75
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      3,
+      0,
+      1,
+      0,
+      3
+     ],
+     "x": [
+      0.9998089194328433,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.031000000017229468
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      4,
+      3
+     ],
+     "x": [
+      0.4354420140993027,
+      0.47677721782609755
+     ],
+     "max_regret": 142.06422544330644,
+     "pure": false,
+     "lower": 142.0642254428892,
+     "upper": 142.06422544330644,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 0.875
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      2,
+      4,
+      0,
+      4,
+      2
+     ],
+     "x": [
+      0.9997125554590495,
+      0.0
+     ],
+     "max_regret": 9.094947017729282e-13,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 9.094947017729282e-13,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.0
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      4,
+      0,
+      3,
+      2
+     ],
+     "x": [
+      0.46149365068818676,
+      0.5105663948152577
+     ],
+     "max_regret": 311.40974327980666,
+     "pure": false,
+     "lower": 311.40974327879013,
+     "upper": 311.40974327980666,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 1.3429999999934807
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      1,
+      3,
+      4,
+      3,
+      1
+     ],
+     "x": [
+      1.0,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.0
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      3,
+      4,
+      4,
+      1
+     ],
+     "x": [
+      0.5234005106251762,
+      0.5084784317492731
+     ],
+     "max_regret": 237.16800381660437,
+     "pure": false,
+     "lower": 237.16800381593723,
+     "upper": 237.16800381660437,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.4529999999795109
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      0,
+      2,
+      3,
+      2,
+      0
+     ],
+     "x": [
+      0.9995229396621541,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.01600000000325963
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      3,
+      3,
+      0
+     ],
+     "x": [
+      0.48855954683548214,
+      0.4761180007715244
+     ],
+     "max_regret": 230.94957716999352,
+     "pure": false,
+     "lower": 230.94957565414674,
+     "upper": 230.94957716999352,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5940000000409782
+    }
+   ]
+  },
+  "flat": {
+   "windows": [
+    {
+     "window": 1,
+     "mass": 1.0,
+     "n_states": 1,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5377608464894691,
+      0.10811944345043276
+     ],
+     "p_pure": 0.0,
+     "max_regret": 153.1079707756412,
+     "vppo_cash": [
+      2058.0601992860743,
+      96.89202922492225
+     ],
+     "vppo_forecast": [
+      2058.060199286074,
+      96.89202922492225
+     ],
+     "der_gain": 2339.157040376184,
+     "switches": 0.24644501274951836,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 2,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.3741713455100928,
+      0.13251732284873124
+     ],
+     "p_pure": 0.0,
+     "max_regret": 173.57368608697303,
+     "vppo_cash": [
+      1520.7220833098518,
+      802.6949875484374
+     ],
+     "vppo_forecast": [
+      1450.948539531511,
+      781.4308426727796
+     ],
+     "der_gain": 2261.8708094406397,
+     "switches": 1.2464450127495184,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 3,
+     "mass": 1.0,
+     "n_states": 2,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5902257475748822,
+      0.11927940346476497
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 52.0743442592179,
+     "vppo_cash": [
+      2540.2497028881216,
+      326.58017127837013
+     ],
+     "vppo_forecast": [
+      2460.329392055775,
+      340.15022607655135
+     ],
+     "der_gain": 1632.0721005900084,
+     "switches": 0.576510775571047,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 4,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.5827286329789287,
+      0.13570541504779382
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 81.75262358862733,
+     "vppo_cash": [
+      2534.741307473024,
+      433.19970811039445
+     ],
+     "vppo_forecast": [
+      2422.010138781299,
+      519.3559723304809
+     ],
+     "der_gain": 1617.3468647155107,
+     "switches": 0.576510775571047,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 5,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.52359340225526,
+      0.16557389448897544
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 77.07665429684765,
+     "vppo_cash": [
+      2321.9568109121396,
+      791.9929697138299
+     ],
+     "vppo_forecast": [
+      2241.7043118566717,
+      769.5828002129192
+     ],
+     "der_gain": 1643.5126008857019,
+     "switches": 1.2464450127495184,
+     "p_empty_vpp": 0.0
+    },
+    {
+     "window": 6,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8836783429206458,
+      0.13060868393860553
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 68.09069334863213,
+     "vppo_cash": [
+      4087.1708602858153,
+      421.5577964986232
+     ],
+     "vppo_forecast": [
+      4006.9402994726097,
+      399.4167403127557
+     ],
+     "der_gain": 249.89467033963325,
+     "switches": 0.4928900254990367,
+     "p_empty_vpp": 0.7535549872504816
+    },
+    {
+     "window": 7,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8910004985426039,
+      0.12292477293536108
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 60.557827282416625,
+     "vppo_cash": [
+      4124.22112923248,
+      356.65483403788795
+     ],
+     "vppo_forecast": [
+      4044.188104303709,
+      358.0165132924028
+     ],
+     "der_gain": 220.2789636364035,
+     "switches": 0.5481375913831765,
+     "p_empty_vpp": 0.7535549872504816
+    },
+    {
+     "window": 8,
+     "mass": 1.0,
+     "n_states": 4,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8803138436419105,
+      0.13154165364636897
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 72.20508646199409,
+     "vppo_cash": [
+      4107.458206561907,
+      423.6888782923362
+     ],
+     "vppo_forecast": [
+      4005.3974957478604,
+      466.760511709005
+     ],
+     "der_gain": 227.47624226982856,
+     "switches": 0.5481375913831765,
+     "p_empty_vpp": 0.7535549872504816
+    },
+    {
+     "window": 9,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8834440902550095,
+      0.1300229460899722
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 77.07665429688811,
+     "vppo_cash": [
+      4091.0915131840493,
+      415.21547608854223
+     ],
+     "vppo_forecast": [
+      4010.839014128567,
+      392.80530658763274
+     ],
+     "der_gain": 251.15539223907967,
+     "switches": 0.4928900254990367,
+     "p_empty_vpp": 0.7535549872504816
+    },
+    {
+     "window": 10,
+     "mass": 1.0,
+     "n_states": 3,
+     "pruned_cumulative": 0.0,
+     "x": [
+      0.8833188517239117,
+      0.13060868393863811
+     ],
+     "p_pure": 0.7535549872504816,
+     "max_regret": 68.09069334839073,
+     "vppo_cash": [
+      4085.4034929510144,
+      421.5577964986976
+     ],
+     "vppo_forecast": [
+      4005.1729321378157,
+      399.41674031284504
+     ],
+     "der_gain": 251.66203767435925,
+     "switches": 0.4928900254990367,
+     "p_empty_vpp": 0.7535549872504816
+    }
+   ],
+   "states": [
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      2,
+      1,
+      1
+     ],
+     "x": [
+      0.5377608464894691,
+      0.10811944345043276
+     ],
+     "max_regret": 153.1079707756412,
+     "pure": false,
+     "lower": 153.107946883301,
+     "upper": 153.1079707756412,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.25
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      0,
+      0
+     ],
+     "x": [
+      0.32119154276140244,
+      0.0
+     ],
+     "max_regret": 142.38520843801052,
+     "pure": false,
+     "lower": 142.38520843801052,
+     "upper": 142.38520843801052,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.375
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      3,
+      0
+     ],
+     "x": [
+      0.5361677038028025,
+      0.5377155795131433
+     ],
+     "max_regret": 268.93870327647915,
+     "pure": false,
+     "lower": 268.93870327510365,
+     "upper": 268.93870327647915,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5619999999762513
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      2,
+      4,
+      0,
+      4,
+      3
+     ],
+     "x": [
+      0.5954198483134132,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.2029999999795109
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      0,
+      0,
+      4,
+      3
+     ],
+     "x": [
+      0.5743437442341225,
+      0.48400007017386104
+     ],
+     "max_regret": 211.30208186499272,
+     "pure": false,
+     "lower": 211.30201197563187,
+     "upper": 211.30208186499272,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 1.3440000000409782
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      1,
+      3,
+      4,
+      3,
+      2
+     ],
+     "x": [
+      0.5954198483134132,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.0779999999795109
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      4,
+      4,
+      3,
+      2
+     ],
+     "x": [
+      0.574923916262183,
+      0.5909214496459162
+     ],
+     "max_regret": 439.6712925001975,
+     "pure": false,
+     "lower": 439.6712924980835,
+     "upper": 439.6712925001975,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 5,
+     "seconds": 1.3910000000032596
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      3,
+      4,
+      3,
+      2
+     ],
+     "x": [
+      0.5280015781955406,
+      0.529970894851672
+     ],
+     "max_regret": 276.29162622853323,
+     "pure": false,
+     "lower": 276.29162622751704,
+     "upper": 276.29162622853323,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.46799999999348074
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      0,
+      2,
+      3,
+      2,
+      1
+     ],
+     "x": [
+      0.5224626018163336,
+      0.047177643304701866
+     ],
+     "max_regret": 2.2737367544323206e-12,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 2.2737367544323206e-12,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.10999999998603016
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      3,
+      3,
+      4,
+      1
+     ],
+     "x": [
+      0.527051051087483,
+      0.5275941462129862
+     ],
+     "max_regret": 312.7539625857278,
+     "pure": false,
+     "lower": 312.7539625830241,
+     "upper": 312.7539625857278,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      2,
+      3,
+      4,
+      1
+     ],
+     "x": [
+      0.5270510510862387,
+      0.5275941462127554
+     ],
+     "max_regret": 312.7539625853831,
+     "pure": false,
+     "lower": 312.75396258385217,
+     "upper": 312.7539625853831,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5310000000172295
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      4,
+      1,
+      2,
+      1,
+      4
+     ],
+     "x": [
+      1.0,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.01600000000325963
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      2,
+      3,
+      0
+     ],
+     "x": [
+      0.5280015781954166,
+      0.5299708948516693
+     ],
+     "max_regret": 276.2916262289398,
+     "pure": false,
+     "lower": 276.2916262278743,
+     "upper": 276.2916262289398,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5310000000172295
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      1,
+      2,
+      3,
+      0
+     ],
+     "x": [
+      0.5280015781955949,
+      0.5299708948517444
+     ],
+     "max_regret": 276.2916262292831,
+     "pure": false,
+     "lower": 276.2916262278843,
+     "upper": 276.2916262292831,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5469999999622814
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      3,
+      0,
+      1,
+      0,
+      3
+     ],
+     "x": [
+      0.9998089194328433,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.01600000000325963
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      1,
+      1,
+      4,
+      3
+     ],
+     "x": [
+      0.5270510510868781,
+      0.5275941462127404
+     ],
+     "max_regret": 312.7539625854172,
+     "pure": false,
+     "lower": 312.75396258228034,
+     "upper": 312.7539625854172,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5470000000204891
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      0,
+      1,
+      4,
+      3
+     ],
+     "x": [
+      0.5743437449095954,
+      0.4840000709939401
+     ],
+     "max_regret": 211.3020859254484,
+     "pure": false,
+     "lower": 211.30207880313398,
+     "upper": 211.3020859254484,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 1.452999999979511
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      2,
+      4,
+      0,
+      4,
+      2
+     ],
+     "x": [
+      0.9997125554590495,
+      0.0
+     ],
+     "max_regret": 9.094947017729282e-13,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 9.094947017729282e-13,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.0
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      0,
+      0,
+      3,
+      2
+     ],
+     "x": [
+      0.528001578196024,
+      0.5299708948518607
+     ],
+     "max_regret": 276.2916262296942,
+     "pure": false,
+     "lower": 276.2916262277608,
+     "upper": 276.2916262296942,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5939999999827705
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      4,
+      0,
+      3,
+      2
+     ],
+     "x": [
+      0.4710236107323708,
+      0.5468579683875326
+     ],
+     "max_regret": 350.7635608289004,
+     "pure": false,
+     "lower": 350.76356082786015,
+     "upper": 350.7635608289004,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 4,
+     "seconds": 1.422000000020489
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      3,
+      0,
+      3,
+      2
+     ],
+     "x": [
+      0.5280015781953513,
+      0.5299708948516391
+     ],
+     "max_regret": 276.2916262291574,
+     "pure": false,
+     "lower": 276.2916262276934,
+     "upper": 276.2916262291574,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      1,
+      3,
+      4,
+      3,
+      1
+     ],
+     "x": [
+      1.0,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 1,
+     "seconds": 0.015000000013969839
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      3,
+      4,
+      4,
+      1
+     ],
+     "x": [
+      0.5270510510858439,
+      0.5275941462128249
+     ],
+     "max_regret": 312.7539625863035,
+     "pure": false,
+     "lower": 312.75396258352094,
+     "upper": 312.7539625863035,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.46899999998277053
+    },
+    {
+     "owners": [
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     "remaining": [
+      3,
+      2,
+      4,
+      4,
+      1
+     ],
+     "x": [
+      0.527051051086122,
+      0.5275941462126513
+     ],
+     "max_regret": 312.7539625848549,
+     "pure": false,
+     "lower": 312.7539625832848,
+     "upper": 312.7539625848549,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5160000000032596
+    },
+    {
+     "owners": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "remaining": [
+      0,
+      2,
+      3,
+      2,
+      0
+     ],
+     "x": [
+      0.9995229396621541,
+      0.0
+     ],
+     "max_regret": 0.0,
+     "pure": true,
+     "lower": 0.0,
+     "upper": 0.0,
+     "decision": "approximate_equilibrium_candidate",
+     "stop": "gap_reached",
+     "rounds": 2,
+     "seconds": 0.015000000013969839
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      2,
+      3,
+      3,
+      0
+     ],
+     "x": [
+      0.5280015781957945,
+      0.5299708948518609
+     ],
+     "max_regret": 276.2916262282397,
+     "pure": false,
+     "lower": 276.2916262282397,
+     "upper": 276.2916262282397,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5
+    },
+    {
+     "owners": [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     "remaining": [
+      4,
+      1,
+      3,
+      3,
+      0
+     ],
+     "x": [
+      0.5280015781958387,
+      0.5299708948518385
+     ],
+     "max_regret": 276.2916262281192,
+     "pure": false,
+     "lower": 276.2916262279985,
+     "upper": 276.2916262281192,
+     "decision": "condition_5_numerically_verified",
+     "stop": "gap_reached",
+     "rounds": 3,
+     "seconds": 0.5779999999795109
+    }
+   ]
+  }
+ },
+ "settings": {
+  "windows": 10,
+  "prune": 0.0001,
+  "epsilon": 0.1,
+  "lengths": [
+   5,
+   4
+  ],
+  "gamma": [
+   200.0,
+   250.0
+  ],
+  "flat": 500.0,
+  "start": {
+   "owners": [
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "remaining": [
+    4,
+    2,
+    2,
+    1,
+    1
+   ]
+  },
+  "solver": {
+   "seconds": 300.0,
+   "round_seconds": 30.0,
+   "max_rounds": 200,
+   "threads": 2,
+   "absolute_gap": 0.001,
+   "tau": 0.0,
+   "stop_on_verified": false,
+   "policy_mode": "capture",
+   "presolve": 0
+  },
+  "eta": 0.001
+ },
+ "provenance": {
+  "rebuild_gap": 0.0,
+  "coptpy": "8.0.6",
+  "numpy": "2.1.2",
+  "python": "3.10.17",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "wall_seconds": 23.203101099992637,
+  "sha256": {
+   "market_family.py": "c7781c1d00c461f056d4e0e4104ca1062487cdfdd84daa63702f98256bfa6687",
+   "audit_minimax_4vpp_candidate.py": "f9869ceb8ddfe2784258174da694d8c14de98585997c351494f8caef43447cee",
+   "case20_game.py": "d8f8a53cc0645215c59ccc2b08b802eb46d3009669f93c303dc9b201c066fe61",
+   "minimax_policies.py": "7d40fbe7454b74306a6b8175d742555b25fff546b2ded7d3e083127d53feb887",
+   "solve_minimax_4vpp.py": "87a18c32d0274b218d34eeed25e45880d664b535a8cb50c4b98d5090d52aadcd",
+   "dynamics.py": "8eb1c2c802c744c22a979b23296f0aeef6100b60d061c448d152373405a55076"
+  }
+ }
+}

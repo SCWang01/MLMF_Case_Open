@@ -1,0 +1,1280 @@
+{
+  "solver": "8.0.6",
+  "python": "3.10.17",
+  "numpy": "2.1.2",
+  "scipy": "1.15.2",
+  "input_sha256": "a288975631cecc71c1902a42d5369208abc35bd871ca8be79f01afdfa2fe4b51",
+  "tau": 0.001,
+  "decision_margin": 1e-06,
+  "workers": 7,
+  "presolve": 0,
+  "full_trace": [
+    {
+      "round": 1,
+      "lower": 0.0,
+      "upper": 16948.816108617364,
+      "master_status": 1
+    },
+    {
+      "round": 2,
+      "lower": 0.0,
+      "upper": 7141.678306146108,
+      "master_status": 1
+    },
+    {
+      "round": 3,
+      "lower": 0.0,
+      "upper": 158.1267432212785,
+      "master_status": 1
+    },
+    {
+      "round": 4,
+      "lower": 0.0,
+      "upper": 158.1267432212785,
+      "master_status": 8
+    },
+    {
+      "round": 5,
+      "lower": 0.0,
+      "upper": 158.1267432212785,
+      "master_status": 8
+    },
+    {
+      "round": 6,
+      "lower": 0.0,
+      "upper": 158.1267432212785,
+      "master_status": 8
+    },
+    {
+      "round": 7,
+      "lower": 0.0,
+      "upper": 158.1267432212785,
+      "master_status": 8
+    },
+    {
+      "round": 8,
+      "lower": 0.0,
+      "upper": 123.1306791312877,
+      "master_status": 8
+    }
+  ],
+  "full_stop": "separation_stalled_numerically",
+  "full_decision": "unresolved",
+  "boxes": [
+    {
+      "box": "b0000LL",
+      "bounds": [
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2346.9579281453266,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1035.7308195418045,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 304.8114631861208,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 216.15264074094466,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 133.6110505143015,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 133.6110505143015
+    },
+    {
+      "box": "b0000LRLL",
+      "bounds": [
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.0,
+          0.25
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2839.624393365596,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 49.75074744369749,
+          "upper": 642.2323878276475,
+          "master_status": 1
+        }
+      ],
+      "lower": 49.75074744369749,
+      "upper": 642.2323878276475
+    },
+    {
+      "box": "b0000LRLRL",
+      "bounds": [
+        [
+          0.0,
+          0.125
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.25,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 5669.012367765261,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1555.7702915750215,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 586.6872013000057,
+          "master_status": 1
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 532.1232322892183,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 429.46203461134974,
+          "master_status": 8
+        },
+        {
+          "round": 6,
+          "lower": 0.0,
+          "upper": 374.81926540338736,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 374.81926540338736
+    },
+    {
+      "box": "b0000LRLRR",
+      "bounds": [
+        [
+          0.125,
+          0.25
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.25,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 5535.901004622674,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 2034.7058414413277,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 348.2192611605574,
+          "master_status": 1
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 348.2192611605574,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 348.2192611605574,
+          "master_status": 8
+        },
+        {
+          "round": 6,
+          "lower": 0.0,
+          "upper": 980.8301721529906,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 980.8301721529906
+    },
+    {
+      "box": "b0000LRR",
+      "bounds": [
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 4163.285026410305,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 907.903400496306,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 543.3312225163645,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 412.24302505172295,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 283.2447954508566,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 283.2447954508566
+    },
+    {
+      "box": "b0000RL",
+      "bounds": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1233.860573854873,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 49.48852513596805,
+          "upper": 568.3426196432383,
+          "master_status": 1
+        }
+      ],
+      "lower": 49.48852513596805,
+      "upper": 568.3426196432383
+    },
+    {
+      "box": "b0000RRL",
+      "bounds": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.25
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 5763.090767894657,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1855.2606035305862,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 535.9881324666712,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 500.08411711037616,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 346.2828276769842,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 346.2828276769842
+    },
+    {
+      "box": "b0000RRR",
+      "bounds": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 4952.418681066348,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 2724.2619846296016,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 725.8359640621784,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 701.5590542036953,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 1557.8781453328183,
+          "master_status": 8
+        },
+        {
+          "round": 6,
+          "lower": 0.0,
+          "upper": 1557.8781453328183,
+          "master_status": 8
+        },
+        {
+          "round": 7,
+          "lower": 0.0,
+          "upper": 701.6297776496949,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 701.6297776496949
+    },
+    {
+      "box": "b0001",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "time_limit",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 7615.541542680751,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1996.3324403207025,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 1996.3324403207025,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 1996.3324403207025,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 5501.702051884734,
+          "master_status": 8
+        },
+        {
+          "round": 6,
+          "lower": 0.0,
+          "upper": 1082.3024870077575,
+          "master_status": 8
+        },
+        {
+          "round": 7,
+          "lower": 0.0,
+          "upper": 1082.3024870077575,
+          "master_status": 8
+        },
+        {
+          "round": 8,
+          "lower": 0.0,
+          "upper": 1082.3024870077575,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 1082.3024870077575
+    },
+    {
+      "box": "b0002",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 5036.395486154972,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 126.23465406105038,
+          "upper": 1015.8977131218376,
+          "master_status": 1
+        }
+      ],
+      "lower": 126.23465406105038,
+      "upper": 1015.8977131218376
+    },
+    {
+      "box": "b0003",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 7615.541542680751,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 136.53404038736096,
+          "upper": 3116.9267742911998,
+          "master_status": 1
+        }
+      ],
+      "lower": 136.53404038736096,
+      "upper": 3116.9267742911998
+    },
+    {
+      "box": "b0004",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 7992.264915972852,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 2225.3636107887605,
+          "master_status": 8
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 1969.3658103632843,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 848.7693649553685,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 848.7693649553685
+    },
+    {
+      "box": "b0005",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 12124.821225087599,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 5669.012367765261,
+          "master_status": 8
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 5669.012367765261,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 4279.861022964267,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 3915.0891801121106,
+          "master_status": 8
+        },
+        {
+          "round": 6,
+          "lower": 0.0,
+          "upper": 3915.0891801121106,
+          "master_status": 8
+        },
+        {
+          "round": 7,
+          "lower": 0.0,
+          "upper": 3915.0891801121106,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 3915.0891801121106
+    },
+    {
+      "box": "b0006",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 8038.997748087171,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 7151.1207927152645,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 2595.4010050720854,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 1143.2729781353873,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 2167.123824199708,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 2167.123824199708
+    },
+    {
+      "box": "b0007",
+      "bounds": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "no_master_incumbent",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 9245.516143888457,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 7571.644718081538,
+          "master_status": 8
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 3228.926192428953,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 7524.827947113787,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 7524.827947113787
+    },
+    {
+      "box": "b0008",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "separation_stalled_numerically",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 4952.418681066348,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1744.9596935452914,
+          "master_status": 1
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 1744.9596935452914,
+          "master_status": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 646.364201681582,
+          "master_status": 8
+        },
+        {
+          "round": 5,
+          "lower": 0.0,
+          "upper": 541.1611135038929,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 541.1611135038929
+    },
+    {
+      "box": "b0009",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 7615.541542680751,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 907.7902331011736,
+          "upper": 2697.1726449203807,
+          "master_status": 1
+        }
+      ],
+      "lower": 907.7902331011736,
+      "upper": 2697.1726449203807
+    },
+    {
+      "box": "b0010",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 5036.395486154972,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 136.53404038735096,
+          "upper": 1839.3412188242664,
+          "master_status": 1
+        }
+      ],
+      "lower": 136.53404038735096,
+      "upper": 1839.3412188242664
+    },
+    {
+      "box": "b0011",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 7105.166911207683,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 1418.7317020257203,
+          "upper": 7105.166911207683,
+          "master_status": 1
+        }
+      ],
+      "lower": 1418.7317020257203,
+      "upper": 7105.166911207683
+    },
+    {
+      "box": "b0012",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 4801.576327818954,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 965.4439557061389,
+          "upper": 1505.7050677418574,
+          "master_status": 1
+        }
+      ],
+      "lower": 965.4439557061389,
+      "upper": 1505.7050677418574
+    },
+    {
+      "box": "b0013",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 3926.360541819954,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 237.7804024547655,
+          "upper": 3423.310261800354,
+          "master_status": 8
+        }
+      ],
+      "lower": 237.7804024547655,
+      "upper": 3423.310261800354
+    },
+    {
+      "box": "b0014",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "attempts": 1,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 6180.228004878092,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 1933.3119068276187,
+          "upper": 1933.3119078265845,
+          "master_status": 1
+        }
+      ],
+      "lower": 1933.3119068276187,
+      "upper": 1933.3119078265845
+    },
+    {
+      "box": "b0015",
+      "bounds": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "decision": "unresolved",
+      "stop": "no_master_incumbent",
+      "attempts": 2,
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 18087.54995637129,
+          "master_status": 1
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 7422.145931055169,
+          "master_status": 8
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 7422.145931055169,
+          "master_status": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": null
+    }
+  ],
+  "lower": 0,
+  "decision": "unresolved",
+  "candidate_source": [
+    "full",
+    1
+  ],
+  "quote": [
+    0.039558160215027935,
+    0.2053204890018072,
+    0.023233037196224545,
+    0.1945524580778087
+  ],
+  "regrets": [
+    123.13067913137016,
+    123.13067913074563,
+    17.9607195223191,
+    123.13067913089587
+  ],
+  "checked_upper": 123.13067913137016,
+  "payoffs": [
+    2163.7590292527757,
+    5044.062107251919,
+    1232.039280477681,
+    3182.4762853075995
+  ],
+  "best_responses": [
+    0.03948256926129878,
+    0.3009707868397697,
+    0.0,
+    0.19197254808217304
+  ]
+}

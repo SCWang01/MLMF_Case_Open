@@ -1,0 +1,357 @@
+{
+  "problem": "min_x max_i max_z [U_i(z,x_-i)-U_i(x)]",
+  "vpp_count": 4,
+  "der_count": 20,
+  "epsilon": 0.1,
+  "tau": 0.001,
+  "policy_mode": "capture",
+  "strategy_bounds": [
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ]
+  ],
+  "threads": 2,
+  "verification_scope": "strategy_box",
+  "configuration": {
+    "seconds": 60,
+    "round_seconds": 30,
+    "max_rounds": 40,
+    "target_absolute_gap": 0.001,
+    "stop_on_verified": false,
+    "decision_margin": 1e-06,
+    "strategy_bounds": [
+      [
+        0.5,
+        1.0
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.5,
+        1.0
+      ]
+    ],
+    "threads": 2,
+    "initial_policy_count": 0,
+    "presolve": 0
+  },
+  "stop_reason": "numerical_exclusion",
+  "decision": "numerical_exclusion",
+  "lower_bound": 907.7902331011736,
+  "raw_solver_lower_bound": 907.7902341011736,
+  "upper_bound": 2697.1726449203807,
+  "absolute_gap": 1789.382411819207,
+  "bounds_overlap_within_tolerance": false,
+  "exact_certificate": false,
+  "certificate_type": "floating_point_global_master_and_piecewise_br_bounds",
+  "elapsed_seconds": 9.827999999979511,
+  "best_candidate": {
+    "x": [
+      0.5,
+      0.2333923007847463,
+      0.0,
+      1.0
+    ],
+    "profits": [
+      1741.928004863509,
+      4941.110916048808,
+      1250.0,
+      1741.0954585945829
+    ],
+    "shares": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.547473508864641e-13,
+        0.9999999999995453,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "best_response_actions": [
+      0.08764726017473756,
+      0.23334077510886347,
+      0.2465541245810633,
+      0.2891583162056333
+    ],
+    "best_response_profits": [
+      2831.803491342264,
+      5976.760661557458,
+      3033.684855636385,
+      4438.2681035149635
+    ],
+    "regrets": [
+      1089.875486478755,
+      1035.64974550865,
+      1783.6848556363848,
+      2697.1726449203807
+    ],
+    "maximum_regret": 2697.1726449203807
+  },
+  "deviation_policies": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 11,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 13,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ]
+  ],
+  "model_size": {
+    "variables": 2405,
+    "binary_variables": 1068,
+    "linear_constraints": 1364,
+    "quadratic_constraints": 8,
+    "general_constraints": 4216
+  },
+  "history": [
+    {
+      "round": 1,
+      "master_status": 1,
+      "master_objective": 0.0,
+      "lower_bound": 0.0,
+      "raw_solver_lower_bound": 0.0,
+      "upper_bound": 7615.541542680751,
+      "absolute_gap": 7615.541542680751,
+      "elapsed_seconds": 0.10899999999674037,
+      "policies": 8,
+      "x1": 0.7842654637563841,
+      "x2": 0.5,
+      "x3": 0.5,
+      "x4": 1.0,
+      "regret1": 4494.913685300253,
+      "regret2": 685.2492909333869,
+      "regret3": 4820.131929958196,
+      "regret4": 7615.541542680751
+    },
+    {
+      "round": 2,
+      "master_status": 1,
+      "master_objective": 907.7902341011736,
+      "lower_bound": 907.7902331011736,
+      "raw_solver_lower_bound": 907.7902341011736,
+      "upper_bound": 2697.1726449203807,
+      "absolute_gap": 1789.382411819207,
+      "elapsed_seconds": 9.827999999979511,
+      "policies": 12,
+      "x1": 0.5,
+      "x2": 0.2333923007847463,
+      "x3": 0.0,
+      "x4": 1.0,
+      "regret1": 1089.875486478755,
+      "regret2": 1035.64974550865,
+      "regret3": 1783.6848556363848,
+      "regret4": 2697.1726449203807
+    }
+  ],
+  "external_checked_upper": 2667.720374218095,
+  "source_sha256": "a288975631cecc71c1902a42d5369208abc35bd871ca8be79f01afdfa2fe4b51"
+}

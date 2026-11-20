@@ -1,0 +1,77 @@
+\documentclass[10pt,border=1pt]{standalone}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\definecolor{cycleblue}{HTML}{0072B2}
+\definecolor{cycleorange}{HTML}{D55E00}
+\definecolor{cycleink}{HTML}{000000}
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,text=cycleink,
+  response one/.style={draw=cycleblue,line width=1.6pt},
+  response two/.style={draw=cycleorange,line width=1.6pt,dash pattern=on 4pt off 2pt},
+  update/.style={draw=cycleink,line width=0.9pt,-{Stealth[length=4.2pt]}},
+  axis/.style={draw=cycleink,line width=0.8pt},
+  grid line/.style={draw=cycleink!14,line width=0.4pt}]
+
+% A common legend above both contract states; panel labels sit under the panels.
+\draw[response one] (0.12,3.98) -- (0.62,3.98);
+\node[anchor=west] at (0.64,3.98) {$\mathrm{BR}_1(x_2)$};
+\draw[response two] (2.41,3.98) -- (2.91,3.98);
+\node[anchor=west] at (2.93,3.98) {$\mathrm{BR}_2(x_1)$};
+\draw[update] (4.73,3.98) -- (5.23,3.98);
+\node[anchor=west] at (5.25,3.98) {Alternating updates};
+\node at (2.15,0.02) {(a) All contracts protected};
+\node at (6.39,0.02) {(b) Contract of DER $e$ expired};
+
+\begin{scope}[shift={(0.79,0.95)}]
+\begin{scope}[x=2.72cm,y=2.55cm]
+  \draw[grid line] (0,0.5) -- (1,0.5) (0.5,0) -- (0.5,1);
+  \draw[axis] (0,1) -- (0,0) -- (1,0);
+  \foreach \pos/\lab in {0/0,.5/0.5,1/1}{
+    \draw[axis] (\pos,0) -- ++(0,-2pt) node[below,inner sep=1pt] {$\lab$};
+    \draw[axis] (0,\pos) -- ++(-2pt,0) node[left,inner sep=1pt] {$\lab$};
+  }
+  \node[below=9pt] at (0.5,0) {$x_1$};
+  \node[rotate=90] at (-0.26,0.5) {$x_2$};
+  \draw[response one] (1,0) -- (1,1);
+  \draw[response two] (0,1) -- (1,1);
+  \filldraw[fill=white,draw=cycleink,line width=0.9pt] (1,1) circle[radius=2.8pt];
+  \fill[cycleink] (1,1) circle[radius=1.2pt];
+  \node[align=center,fill=white,inner sep=1.5pt] (eqpoint) at (0.52,0.69) {Pure NSE\\$(1,1)$};
+  \draw[cycleink!70,line width=0.6pt] (eqpoint.north east) -- (0.975,0.971);
+\end{scope}
+\end{scope}
+
+% Every best response after expiry is at least 5/7, so this window
+% contains any possible intersection.
+\begin{scope}[shift={(4.86,0.95)}]
+\begin{scope}[x=10.2cm,y=8.5cm]
+\begin{scope}[shift={(-0.70,-0.70)}]
+  \foreach \v in {0.8,0.9,1}{
+    \draw[grid line] (\v,0.70) -- (\v,1) (0.70,\v) -- (1,\v);
+  }
+  \draw[axis] (0.70,1) -- (0.70,0.70) -- (1,0.70);
+  \foreach \v in {0.7,0.8,0.9,1}{
+    \draw[axis] (\v,0.70) -- ++(0,-2pt) node[below,inner sep=1pt] {$\v$};
+    \draw[axis] (0.70,\v) -- ++(-2pt,0) node[left,inner sep=1pt] {$\v$};
+  }
+  \node[below=9pt] at (0.85,0.70) {$x_1$};
+  \node[rotate=90] at (0.632,0.85) {$x_2$};
+  \draw[response one] (1,0.70) -- (1,{107/140})
+    ({107/140-0.05},{107/140}) -- (0.95,1);
+  \draw[response two] (0.70,1) -- ({107/140},1)
+    ({107/140},{107/140-0.05}) -- (1,0.95);
+  \foreach \xx/\yy in {1/{107/140},{107/140-0.05}/{107/140}}
+    \fill[cycleblue] (\xx,\yy) circle[radius=2.0pt];
+  \foreach \xx/\yy in {{107/140}/1,{107/140}/{107/140-0.05}}
+    \fill[cycleorange] (\xx,\yy) circle[radius=2.0pt];
+  \foreach \start/\finish in {{(1,0.95)}/{(0.90,0.95)},
+    {(0.90,0.95)}/{(0.90,0.85)},{(0.90,0.85)}/{(0.80,0.85)},
+    {(0.80,0.85)}/{(0.80,0.75)},{(0.80,0.75)}/{(1,0.75)},
+    {(1,0.75)}/{(1,0.95)}}
+    \draw[update] \start -- \finish;
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\end{document}

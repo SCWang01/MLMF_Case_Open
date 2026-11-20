@@ -1,0 +1,25 @@
+# Window progress reconstructed from Supplement/results/dynamics.json (COPT 8.0.6).
+Each row is a probability-weighted expectation across the current branches.
+time_varying t=1: states=1 x=[0.496 0.111] p_approx=0.000 regret=160.84 cash=[1880.3 89.2] der=2540.5 pruned=0.00e+00
+time_varying t=2: states=2 x=[0.421 0.099] p_approx=0.807 regret=46.50 cash=[1825.8 572.4] der=2209.1 pruned=0.00e+00
+time_varying t=3: states=2 x=[0.572 0.099] p_approx=0.807 regret=35.19 cash=[2620.3 209.1] der=1580.7 pruned=0.00e+00
+time_varying t=4: states=2 x=[0.570 0.111] p_approx=0.807 regret=78.73 cash=[2647.2 398.4] der=1561.7 pruned=0.00e+00
+time_varying t=5: states=2 x=[0.525 0.098] p_approx=0.807 regret=45.68 cash=[2445.2 566.3] der=1780.7 pruned=0.00e+00
+time_varying t=6: states=2 x=[0.901 0.092] p_approx=0.807 regret=44.49 cash=[4310.9 354.0] der=128.2 pruned=0.00e+00
+time_varying t=7: states=2 x=[0.891 0.092] p_approx=0.807 regret=27.36 cash=[4340.8 252.5] der=2.6 pruned=0.00e+00
+time_varying t=8: states=2 x=[0.896 0.098] p_approx=0.807 regret=59.98 cash=[4453.5 369.1] der=-29.5 pruned=0.00e+00
+time_varying t=9: states=2 x=[0.908 0.098] p_approx=0.807 regret=45.68 cash=[4327.7 364.4] der=100.1 pruned=0.00e+00
+time_varying t=10: states=2 x=[0.901 0.092] p_approx=0.807 regret=44.49 cash=[4309.0 354.0] der=130.1 pruned=0.00e+00
+time_varying: 19 distinct states, maximum bracket width 7.70989713885e-05
+flat t=1: states=1 x=[0.538 0.108] p_approx=0.000 regret=153.11 cash=[2058.1 96.9] der=2339.2 pruned=0.00e+00
+flat t=2: states=2 x=[0.374 0.133] p_approx=0.000 regret=173.57 cash=[1520.7 802.7] der=2261.9 pruned=0.00e+00
+flat t=3: states=2 x=[0.590 0.119] p_approx=0.754 regret=52.07 cash=[2540.2 326.6] der=1632.1 pruned=0.00e+00
+flat t=4: states=3 x=[0.583 0.136] p_approx=0.754 regret=81.75 cash=[2534.7 433.2] der=1617.3 pruned=0.00e+00
+flat t=5: states=3 x=[0.524 0.166] p_approx=0.754 regret=77.08 cash=[2322.0 792.0] der=1643.5 pruned=0.00e+00
+flat t=6: states=3 x=[0.884 0.131] p_approx=0.754 regret=68.09 cash=[4087.2 421.6] der=249.9 pruned=0.00e+00
+flat t=7: states=3 x=[0.891 0.123] p_approx=0.754 regret=60.56 cash=[4124.2 356.7] der=220.3 pruned=0.00e+00
+flat t=8: states=4 x=[0.880 0.132] p_approx=0.754 regret=72.21 cash=[4107.5 423.7] der=227.5 pruned=0.00e+00
+flat t=9: states=3 x=[0.883 0.130] p_approx=0.754 regret=77.08 cash=[4091.1 415.2] der=251.2 pruned=0.00e+00
+flat t=10: states=3 x=[0.883 0.131] p_approx=0.754 regret=68.09 cash=[4085.4 421.6] der=251.7 pruned=0.00e+00
+flat: 27 distinct states, maximum bracket width 6.98893608444e-05
+Wall time reported by the original COPT run: 23.203 s.

@@ -1,0 +1,7 @@
+# Retain the bytes recorded by the result certificates and SHA256SUMS.txt.
+* -text
+*.pdf binary
+*.xlsx binary
+*.npz binary
+*.mat binary
+*.gz binary

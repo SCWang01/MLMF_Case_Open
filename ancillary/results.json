@@ -1,0 +1,5865 @@
+{
+  "solver": "COPT",
+  "coptpy_version": "8.0.6",
+  "python": "3.10.17",
+  "settings": {
+    "control": {
+      "tau": 2e-05,
+      "decision_margin": 1e-06,
+      "policy_mode": "capture",
+      "seconds": 300,
+      "round_seconds": 30,
+      "max_rounds": 200,
+      "absolute_gap": 2e-05,
+      "threads": 4
+    },
+    "five": {
+      "tau": 0.001,
+      "decision_margin": 1e-06,
+      "policy_mode": "capture",
+      "seconds": 300,
+      "round_seconds": 30,
+      "max_rounds": 200,
+      "absolute_gap": 0.001,
+      "threads": 2
+    },
+    "expiry": {
+      "tau": 0.001,
+      "decision_margin": 1e-06,
+      "policy_mode": "capture",
+      "seconds": 300,
+      "round_seconds": 30,
+      "max_rounds": 200,
+      "absolute_gap": 0.001,
+      "threads": 2
+    }
+  },
+  "results": [
+    {
+      "key": {},
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2512.982479009597,
+          "candidate": [
+            0.792750171169092,
+            0.4350619995584966
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 346.27442972445215,
+          "candidate": [
+            0.5455159848634172,
+            0.19337574294321855
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 30.424239915686396,
+          "upper": 235.2217192939326,
+          "candidate": [
+            0.4417058386615989,
+            0.03249420106446131
+          ],
+          "raw_bound": 30.424240915686397,
+          "rules": 7
+        }
+      ],
+      "lower": 30.424239915686396,
+      "upper": 235.2217192939326,
+      "quote": [
+        0.4417058386615989,
+        0.03249420106446131
+      ],
+      "checked_upper": 235.2217192939662,
+      "regrets": [
+        30.424240915683747,
+        235.2217192939662
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.23399999999674037,
+      "case": "five",
+      "epsilon": 0.01,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {},
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2200.4807335975365,
+          "candidate": [
+            0.7223057700642707,
+            0.31100974446911234
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 204.7974783780945,
+          "candidate": [
+            0.48914148824523906,
+            0.0993904402964244
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 93.71125893391252,
+          "upper": 204.7974783780945,
+          "candidate": [
+            0.5804297535766513,
+            0.25170528042039786
+          ],
+          "raw_bound": 93.71125993391252,
+          "rules": 7
+        }
+      ],
+      "lower": 93.71125893391252,
+      "upper": 204.7974783780945,
+      "quote": [
+        0.48914148824523906,
+        0.0993904402964244
+      ],
+      "checked_upper": 204.79747837811186,
+      "regrets": [
+        7.710951877001022e-10,
+        204.79747837811186
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.25,
+      "case": "five",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999990594,
+          9.405334623934508e-13
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {},
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2208.3526149975983,
+          "candidate": [
+            0.7250669128095246,
+            0.31496755005418
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 341.9780271786126,
+          "candidate": [
+            0.5449413769146415,
+            0.19337197498299397
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 29.690857633266855,
+          "upper": 234.4883370115462,
+          "candidate": [
+            0.4422781885891608,
+            0.03410674800521194
+          ],
+          "raw_bound": 29.690858633266856,
+          "rules": 7
+        }
+      ],
+      "lower": 29.690857633266855,
+      "upper": 234.4883370115462,
+      "quote": [
+        0.4422781885891608,
+        0.03410674800521194
+      ],
+      "checked_upper": 234.4883370115462,
+      "regrets": [
+        29.690858633266703,
+        234.4883370115462
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.18699999997625127,
+      "case": "five",
+      "epsilon": 1.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {},
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2287.071428998879,
+          "candidate": [
+            0.7526783402620617,
+            0.3545456059048513
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 303.22895041593654,
+          "candidate": [
+            0.5398211080641684,
+            0.19351033076160912
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 23.023745974904767,
+          "upper": 227.82122535318408,
+          "candidate": [
+            0.44748136974881864,
+            0.04876626564839629
+          ],
+          "raw_bound": 23.023746974904768,
+          "rules": 7
+        }
+      ],
+      "lower": 23.023745974904767,
+      "upper": 227.82122535318408,
+      "quote": [
+        0.44748136974881864,
+        0.04876626564839629
+      ],
+      "checked_upper": 227.82122535318408,
+      "regrets": [
+        23.023746974904352,
+        227.82122535318408
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.21799999999348074,
+      "case": "five",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 0
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 9.094947017729282e-12,
+          "candidate": [
+            0.9999999999999978,
+            1.0
+          ],
+          "raw_bound": 5.4569682106375694e-12,
+          "rules": 4
+        }
+      ],
+      "lower": 0.0,
+      "upper": 9.094947017729282e-12,
+      "quote": [
+        0.9999999999999978,
+        1.0
+      ],
+      "checked_upper": 9.130526773251114e-12,
+      "regrets": [
+        9.130526773251114e-12,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 130,
+        "binary_variables": 50,
+        "linear_constraints": 79,
+        "quadratic_constraints": 2,
+        "general_constraints": 200
+      },
+      "elapsed_seconds": 0.015000000013969839,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "key": {
+        "free": 1
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1059.569120751983,
+          "candidate": [
+            0.9999431081238838,
+            0.9998998864447037
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 276.7911008972546,
+          "upper": 276.79110816082124,
+          "candidate": [
+            0.5449303837541659,
+            0.1992587449873225
+          ],
+          "raw_bound": 276.7911018972546,
+          "rules": 6
+        }
+      ],
+      "lower": 276.7911008972546,
+      "upper": 276.79110816082124,
+      "quote": [
+        0.5449303837541659,
+        0.1992587449873225
+      ],
+      "checked_upper": 276.7911081609308,
+      "regrets": [
+        276.79110587870355,
+        276.7911081609308
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.15600000001722947,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.7602783918351453,
+          0.2397216081648547
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 2
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 454.19747837820876,
+          "candidate": [
+            0.9995854588882277,
+            0.9995602438238828
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 95.44436845190461,
+          "upper": 95.44436945190955,
+          "candidate": [
+            0.9767889544233591,
+            0.7404532069376994
+          ],
+          "raw_bound": 95.4443694519046,
+          "rules": 6
+        }
+      ],
+      "lower": 95.44436845190461,
+      "upper": 95.44436945190955,
+      "quote": [
+        0.9767889544233591,
+        0.7404532069376994
+      ],
+      "checked_upper": 95.44436945190992,
+      "regrets": [
+        95.44436945190992,
+        95.44436945190377
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.046999999962281436,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 3
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2278.639604149687,
+          "candidate": [
+            0.9990615966610703,
+            0.998448790010087
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4316696515669567,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4316696515669567,
+        0.0
+      ],
+      "checked_upper": 2.957112318261731e-10,
+      "regrets": [
+        2.957112318261731e-10,
+        9.57523400156302e-27
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0470000000204891,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.9999999999996766,
+          3.2336244910336736e-13
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "27337010689789489971/63328544387024674816",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 4
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 375.8956904893762,
+          "candidate": [
+            0.9998398955952322,
+            0.9995339114018248
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 132.1689503482196,
+          "upper": 132.16895134821965,
+          "candidate": [
+            0.8678712450241006,
+            0.7093894367675398
+          ],
+          "raw_bound": 132.1689513482196,
+          "rules": 6
+        }
+      ],
+      "lower": 132.1689503482196,
+      "upper": 132.16895134821965,
+      "quote": [
+        0.8678712450241006,
+        0.7093894367675398
+      ],
+      "checked_upper": 132.16895134821965,
+      "regrets": [
+        132.16895134821942,
+        132.16895134821965
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0779999999795109,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 5
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1020.8001486850274,
+          "candidate": [
+            0.6564957487721814,
+            0.3954831967248162
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 276.79107017820894,
+          "upper": 276.79110648719256,
+          "candidate": [
+            0.5449303831860287,
+            0.19925874398740664
+          ],
+          "raw_bound": 276.79107117820894,
+          "rules": 6
+        }
+      ],
+      "lower": 276.79107017820894,
+      "upper": 276.79110648719256,
+      "quote": [
+        0.5449303831860287,
+        0.19925874398740664
+      ],
+      "checked_upper": 276.79110648735593,
+      "regrets": [
+        276.79110648735593,
+        276.7911064872581
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.09399999998277053,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.7602783910579753,
+          0.2397216089420246
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 6
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 738.4069705588934,
+          "candidate": [
+            0.9995854588882273,
+            0.9995602438238819
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 88.63247546692048,
+          "upper": 163.0138689139442,
+          "candidate": [
+            0.6978165158946854,
+            0.35931129059170847
+          ],
+          "raw_bound": 88.63247646692048,
+          "rules": 6
+        }
+      ],
+      "lower": 88.63247546692048,
+      "upper": 163.0138689139442,
+      "quote": [
+        0.6978165158946854,
+        0.35931129059170847
+      ],
+      "checked_upper": 163.01386891394884,
+      "regrets": [
+        88.63247646694339,
+        163.01386891394884
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06300000002374873,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 7
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 722.8749738561804,
+          "candidate": [
+            0.6563335206392193,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.09157358680500893,
+          "candidate": [
+            0.43178343531918933,
+            0.00020022711060440086
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4316696515669567,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4316696515669567,
+        0.0
+      ],
+      "checked_upper": 2.957112318261731e-10,
+      "regrets": [
+        2.957112318261731e-10,
+        9.57523400156302e-27
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 232,
+        "binary_variables": 94,
+        "linear_constraints": 151,
+        "quadratic_constraints": 5,
+        "general_constraints": 348
+      },
+      "elapsed_seconds": 0.09299999999348074,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.9999999999996766,
+          3.2336244910336736e-13
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "27337010689789489971/63328544387024674816",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 8
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1042.6764878634508,
+          "candidate": [
+            0.999942186876004,
+            0.9999035272342147
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 271.96064051119197,
+          "upper": 271.9607091289089,
+          "candidate": [
+            0.5221522532091497,
+            0.20266369190884614
+          ],
+          "raw_bound": 271.96064151119197,
+          "rules": 6
+        }
+      ],
+      "lower": 271.96064051119197,
+      "upper": 271.9607091289089,
+      "quote": [
+        0.5221522532091497,
+        0.20266369190884614
+      ],
+      "checked_upper": 271.9607091288342,
+      "regrets": [
+        271.96070912785586,
+        271.9607091288342
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0470000000204891,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.750198559088311,
+          0.249801440911689
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 9
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1088.7075276069916,
+          "candidate": [
+            0.5221522532092484,
+            0.20251894444924412
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 300.80535090545516,
+          "upper": 300.8054260469472,
+          "candidate": [
+            0.4952050637907186,
+            0.15768889998008445
+          ],
+          "raw_bound": 300.80535190545515,
+          "rules": 6
+        }
+      ],
+      "lower": 300.80535090545516,
+      "upper": 300.8054260469472,
+      "quote": [
+        0.4952050637907186,
+        0.15768889998008445
+      ],
+      "checked_upper": 300.8054260468675,
+      "regrets": [
+        300.80542604660354,
+        300.8054260468675
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.09399999998277053,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.708662197180447,
+          0.291337802819553
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 10
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2193.8468231621846,
+          "candidate": [
+            0.9997927294441142,
+            0.9999035272342147
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 382.78810051402445,
+          "candidate": [
+            0.5288766397596713,
+            0.21393287448896559
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 57.57770719895336,
+          "upper": 57.57770819900884,
+          "candidate": [
+            0.42005547866668136,
+            0.05284538592101294
+          ],
+          "raw_bound": 57.57770819895336,
+          "rules": 8
+        }
+      ],
+      "lower": 57.57770719895336,
+      "upper": 57.57770819900884,
+      "quote": [
+        0.42005547866668136,
+        0.05284538592101294
+      ],
+      "checked_upper": 57.57770819900876,
+      "regrets": [
+        57.57770819900876,
+        57.57770819895328
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 11
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1625.957216347843,
+          "candidate": [
+            0.5288766397596733,
+            0.0008795123522398391
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.40067333078424766,
+            0.0
+          ],
+          "raw_bound": 2.2737367544323206e-13,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.40067333078424766,
+        0.0
+      ],
+      "checked_upper": 7.141552729433522e-14,
+      "regrets": [
+        7.141552729433522e-14,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0779999999795109,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 12
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2004.7264279280423,
+          "candidate": [
+            0.9998843737520076,
+            0.9999035272342145
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 736.0274813547953,
+          "candidate": [
+            0.6291555885298179,
+            0.38116011719576215
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 271.9606494378995,
+          "upper": 271.96070913167506,
+          "candidate": [
+            0.5221522532075863,
+            0.20266369190623745
+          ],
+          "raw_bound": 271.9606504378995,
+          "rules": 8
+        }
+      ],
+      "lower": 271.9606494378995,
+      "upper": 271.96070913167506,
+      "quote": [
+        0.5221522532075863,
+        0.20266369190623745
+      ],
+      "checked_upper": 271.9607091315291,
+      "regrets": [
+        271.96070912601704,
+        271.9607091315291
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.21799999999348074,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7501985590892517,
+          0.2498014409107483
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 13
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1702.315961550335,
+          "candidate": [
+            0.5567853741940179,
+            0.220059491976774
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 300.8054101645322,
+          "upper": 300.8054260470366,
+          "candidate": [
+            0.49520506379066376,
+            0.15768889997999294
+          ],
+          "raw_bound": 300.8054111645322,
+          "rules": 6
+        }
+      ],
+      "lower": 300.8054101645322,
+      "upper": 300.8054260470366,
+      "quote": [
+        0.49520506379066376,
+        0.15768889997999294
+      ],
+      "checked_upper": 300.8054260469712,
+      "regrets": [
+        300.805426046518,
+        300.8054260469712
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7086621971804975,
+          0.2913378028195025
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 14
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2476.444802108618,
+          "candidate": [
+            0.9998398955952325,
+            1.0
+          ],
+          "raw_bound": 1.0343370604459778e-10,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 932.882820866366,
+          "candidate": [
+            0.6563335206392197,
+            0.27129877337975833
+          ],
+          "raw_bound": 1.0343370604459778e-10,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.08638682287010882,
+          "candidate": [
+            0.40078895703224,
+            0.00019294553157046167
+          ],
+          "raw_bound": 1.0343370604459778e-10,
+          "rules": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4006733307842477,
+            0.0
+          ],
+          "raw_bound": 1.0343370604459778e-10,
+          "rules": 9
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4006733307842477,
+        0.0
+      ],
+      "checked_upper": 2.9090943829059634e-10,
+      "regrets": [
+        2.9090943829059634e-10,
+        1.047944243019179e-26
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 302,
+        "binary_variables": 124,
+        "linear_constraints": 201,
+        "quadratic_constraints": 7,
+        "general_constraints": 448
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999996517,
+          3.4829347402819603e-13
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 15
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 982.7988344136927,
+          "candidate": [
+            0.528876639759672,
+            0.17105671058732203
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 92.28648806655684,
+          "candidate": [
+            0.4316696515669567,
+            0.05172356358523294
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.08638682287010882,
+          "candidate": [
+            0.40078895703224,
+            0.00019294553157045882
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4006733307842476,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4006733307842476,
+        0.0
+      ],
+      "checked_upper": 3.3155624206615866e-13,
+      "regrets": [
+        3.3155624206615866e-13,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.23499999998603016,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 16
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 454.1974783780013,
+          "candidate": [
+            0.9990327674938106,
+            0.9995602438238829
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 19.54009249048971,
+          "upper": 19.54011068392083,
+          "candidate": [
+            0.9952480549427734,
+            0.9522748399172289
+          ],
+          "raw_bound": 19.54009349048971,
+          "rules": 6
+        }
+      ],
+      "lower": 19.54009249048971,
+      "upper": 19.54011068392083,
+      "quote": [
+        0.9952480549427734,
+        0.9522748399172289
+      ],
+      "checked_upper": 19.540110683921412,
+      "regrets": [
+        19.540110683921412,
+        19.540110683920254
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0470000000204891,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 17
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1894.011907334666,
+          "candidate": [
+            0.9995163837469043,
+            0.9992490862065515
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 871.5694279039699,
+          "candidate": [
+            0.48450522802965934,
+            0.4659585937087537
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 164.0387280006059,
+          "upper": 164.03872900060605,
+          "candidate": [
+            0.4926853356001869,
+            0.17756968935162995
+          ],
+          "raw_bound": 164.03872900060588,
+          "rules": 8
+        }
+      ],
+      "lower": 164.0387280006059,
+      "upper": 164.03872900060605,
+      "quote": [
+        0.4926853356001869,
+        0.17756968935162995
+      ],
+      "checked_upper": 164.03872900060594,
+      "regrets": [
+        164.0387290006059,
+        164.03872900060594
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 18
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 799.4907417476488,
+          "candidate": [
+            1.0,
+            0.9995602438238812
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 54.47031712577643,
+          "upper": 300.16262689159794,
+          "candidate": [
+            0.9867534036439037,
+            0.8516872701862934
+          ],
+          "raw_bound": 54.47031812577643,
+          "rules": 6
+        }
+      ],
+      "lower": 54.47031712577643,
+      "upper": 300.16262689159794,
+      "quote": [
+        0.9867534036439037,
+        0.8516872701862934
+      ],
+      "checked_upper": 300.16262689159805,
+      "regrets": [
+        300.16262689159805,
+        54.47031812577653
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06299999996554106,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 19
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 312.5638875687699,
+          "candidate": [
+            0.5288766397596733,
+            0.17105671058732413
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4316696515669567,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4316696515669567,
+        0.0
+      ],
+      "checked_upper": 2.957112318261731e-10,
+      "regrets": [
+        2.957112318261731e-10,
+        9.57523400156302e-27
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06300000002374873,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.9999999999996766,
+          3.2336244910336736e-13
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "27337010689789489971/63328544387024674816",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 20
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 166.35880345450647,
+          "candidate": [
+            0.8168228741229341,
+            0.4672092432178754
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 166.35880345450647,
+          "candidate": [
+            0.999372286800223,
+            0.9981552440694611
+          ],
+          "raw_bound": 0.0,
+          "rules": 5
+        },
+        {
+          "round": 3,
+          "lower": 15.894233074432007,
+          "upper": 166.35880345450647,
+          "candidate": [
+            0.8129575671003616,
+            0.7945331065937172
+          ],
+          "raw_bound": 15.894234074432006,
+          "rules": 7
+        }
+      ],
+      "lower": 15.894233074432007,
+      "upper": 166.35880345450647,
+      "quote": [
+        0.8168228741229341,
+        0.4672092432178754
+      ],
+      "checked_upper": 166.35880345450957,
+      "regrets": [
+        3.0282953465423835e-12,
+        166.35880345450957
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.9999999999999951,
+          4.932577510892166e-15
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 21
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1317.8527312326587,
+          "candidate": [
+            0.6219295163810851,
+            0.3346031366904917
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 219.51986952765185,
+          "candidate": [
+            0.43178343531918945,
+            0.00020022711059225536
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 164.0387280005861,
+          "upper": 164.0387290008088,
+          "candidate": [
+            0.49268533560024874,
+            0.17756968935173037
+          ],
+          "raw_bound": 164.0387290005861,
+          "rules": 7
+        }
+      ],
+      "lower": 164.0387280005861,
+      "upper": 164.0387290008088,
+      "quote": [
+        0.49268533560024874,
+        0.17756968935173037
+      ],
+      "checked_upper": 164.03872900080884,
+      "regrets": [
+        164.03872900058627,
+        164.03872900080884
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 22
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 596.8761533907666,
+          "candidate": [
+            1.0,
+            0.19255662925843756
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 596.8761533907666,
+          "candidate": [
+            1.0,
+            0.9995339114018263
+          ],
+          "raw_bound": 0.0,
+          "rules": 5
+        },
+        {
+          "round": 3,
+          "lower": 52.004967356277845,
+          "upper": 459.85917776285305,
+          "candidate": [
+            0.8041758243528835,
+            0.5840893135422803
+          ],
+          "raw_bound": 52.00496835627784,
+          "rules": 6
+        }
+      ],
+      "lower": 52.004967356277845,
+      "upper": 459.85917776285305,
+      "quote": [
+        0.8041758243528835,
+        0.5840893135422803
+      ],
+      "checked_upper": 459.85917776289915,
+      "regrets": [
+        459.85917776289915,
+        52.00496835627814
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.15600000001722947,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 23
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 312.56388756862367,
+          "candidate": [
+            0.528876639759672,
+            0.17105671058732203
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.09157358680484236,
+          "candidate": [
+            0.43178343531918945,
+            0.00020022711059233865
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.43166965156695636,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.43166965156695636,
+        0.0
+      ],
+      "checked_upper": 1.388420202893016e-12,
+      "regrets": [
+        1.388420202893016e-12,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 232,
+        "binary_variables": 94,
+        "linear_constraints": 151,
+        "quadratic_constraints": 5,
+        "general_constraints": 348
+      },
+      "elapsed_seconds": 0.18699999997625127,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "27337010689789489971/63328544387024674816",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 24
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 891.6394731345172,
+          "candidate": [
+            0.46662085649595053,
+            0.5154337807414796
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 143.69353158242086,
+          "upper": 160.50391005761747,
+          "candidate": [
+            0.4577748754630153,
+            0.15359761749051765
+          ],
+          "raw_bound": 143.69353258242086,
+          "rules": 6
+        }
+      ],
+      "lower": 143.69353158242086,
+      "upper": 160.50391005761747,
+      "quote": [
+        0.4577748754630153,
+        0.15359761749051765
+      ],
+      "checked_upper": 160.50391005762404,
+      "regrets": [
+        143.69353258242077,
+        160.50391005762404
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06299999996554106,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 25
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 178.1174293889823,
+          "candidate": [
+            0.4316696515669567,
+            0.09113165640982795
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 178.1174293889823,
+          "candidate": [
+            0.9992938706993998,
+            0.9989181547313634
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 154.46547446882482,
+          "upper": 159.35042310516053,
+          "candidate": [
+            0.4642824494919629,
+            0.10611375388598479
+          ],
+          "raw_bound": 154.46547546882482,
+          "rules": 8
+        }
+      ],
+      "lower": 154.46547446882482,
+      "upper": 159.35042310516053,
+      "quote": [
+        0.4642824494919629,
+        0.10611375388598479
+      ],
+      "checked_upper": 159.35042310511142,
+      "regrets": [
+        154.46549609890025,
+        159.35042310511142
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.14100000000325963,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.8404272284248823,
+          0.15957277157511773
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 26
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2305.438653213017,
+          "candidate": [
+            0.9988161483029869,
+            0.9979280337891963
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 94.29556631002723,
+          "candidate": [
+            0.43234192475486055,
+            0.05284538592101316
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 57.577707198974736,
+          "upper": 57.57770819897473,
+          "candidate": [
+            0.42005547866668863,
+            0.05284538592101292
+          ],
+          "raw_bound": 57.57770819897473,
+          "rules": 8
+        }
+      ],
+      "lower": 57.577707198974736,
+      "upper": 57.57770819897473,
+      "quote": [
+        0.42005547866668863,
+        0.05284538592101292
+      ],
+      "checked_upper": 57.57770819897502,
+      "regrets": [
+        57.57770819897468,
+        57.57770819897502
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 27
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1879.4159910637525,
+          "candidate": [
+            0.5288766397596733,
+            0.09113165640982837
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 9.497398423263803e-10,
+          "candidate": [
+            0.40067333078424777,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 9.497398423263803e-10,
+      "quote": [
+        0.40067333078424777,
+        0.0
+      ],
+      "checked_upper": 6.919019619822867e-10,
+      "regrets": [
+        6.919019619822867e-10,
+        5.928047526913907e-26
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999991717,
+          8.283847352694341e-13
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 28
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1309.9855482361365,
+          "candidate": [
+            0.6282325157528197,
+            0.3795350891482922
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 206.74531651260483,
+          "candidate": [
+            0.40067333078424766,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 155.39735412035216,
+          "upper": 155.3973682737356,
+          "candidate": [
+            0.46281720044959873,
+            0.10366840880527212
+          ],
+          "raw_bound": 155.39735512035216,
+          "rules": 7
+        }
+      ],
+      "lower": 155.39735412035216,
+      "upper": 155.3973682737356,
+      "quote": [
+        0.46281720044959873,
+        0.10366840880527212
+      ],
+      "checked_upper": 155.39736827373244,
+      "regrets": [
+        155.39736827290818,
+        155.39736827373244
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.15700000000651926,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.8389560494575512,
+          0.16104395054244877
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 29
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 892.6248677830231,
+          "candidate": [
+            0.48345735295672854,
+            0.09113165640982922
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 196.04013063332292,
+          "candidate": [
+            0.4316696515669565,
+            0.05172356358522816
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 154.46549509890775,
+          "upper": 159.3504231051529,
+          "candidate": [
+            0.4642824494920458,
+            0.10611375388612304
+          ],
+          "raw_bound": 154.46549609890775,
+          "rules": 7
+        }
+      ],
+      "lower": 154.46549509890775,
+      "upper": 159.3504231051529,
+      "quote": [
+        0.4642824494920458,
+        0.10611375388612304
+      ],
+      "checked_upper": 159.35042310527206,
+      "regrets": [
+        154.4654960991699,
+        159.35042310527206
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.2029999999795109,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.8404272284246321,
+          0.1595727715753678
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 30
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 803.8148421734779,
+          "candidate": [
+            0.6563335206392192,
+            0.09113165640982795
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.40067333078424766,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.40067333078424766,
+        0.0
+      ],
+      "checked_upper": 7.141552729433522e-14,
+      "regrets": [
+        7.141552729433522e-14,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0940000000409782,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 31
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1879.4159910637518,
+          "candidate": [
+            0.528876639759672,
+            0.09113165640982791
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 92.62652908726007,
+          "candidate": [
+            0.431783435319189,
+            0.05191343454393997
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.08638682287010882,
+          "candidate": [
+            0.40078895703224,
+            0.00019294553157045882
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.40067333078424733,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.40067333078424733,
+        0.0
+      ],
+      "checked_upper": 1.6322598159252758e-12,
+      "regrets": [
+        1.6322598159252758e-12,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.23499999998603016,
+      "case": "expiry",
+      "epsilon": 0.1,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "24969725051855336243/62319408688822599680",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 0
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 9.094947017729282e-12,
+          "candidate": [
+            0.9999999999999978,
+            1.0
+          ],
+          "raw_bound": 5.4569682106375694e-12,
+          "rules": 4
+        }
+      ],
+      "lower": 0.0,
+      "upper": 9.094947017729282e-12,
+      "quote": [
+        0.9999999999999978,
+        1.0
+      ],
+      "checked_upper": 9.130526773251114e-12,
+      "regrets": [
+        9.130526773251114e-12,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 130,
+        "binary_variables": 50,
+        "linear_constraints": 79,
+        "quadratic_constraints": 2,
+        "general_constraints": 200
+      },
+      "elapsed_seconds": 0.0,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "key": {
+        "free": 1
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 694.6933501649253,
+          "candidate": [
+            0.6592991283330685,
+            0.4001767658099348
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 264.63556380538176,
+          "upper": 264.6356162126524,
+          "candidate": [
+            0.550562682878941,
+            0.21439930559992115
+          ],
+          "raw_bound": 264.63556480538176,
+          "rules": 6
+        }
+      ],
+      "lower": 264.63556380538176,
+      "upper": 264.6356162126524,
+      "quote": [
+        0.550562682878941,
+        0.21439930559992115
+      ],
+      "checked_upper": 264.63561621265177,
+      "regrets": [
+        264.6356003056372,
+        264.63561621265177
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.7637718463234858,
+          0.23622815367651423
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 2
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 394.7974783782789,
+          "candidate": [
+            0.9585458888227014,
+            0.9560243823881445
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 63.370728976765236,
+          "upper": 63.370729976765574,
+          "candidate": [
+            0.9845889190723096,
+            0.7839890683734357
+          ],
+          "raw_bound": 63.37072997676523,
+          "rules": 6
+        }
+      ],
+      "lower": 63.370728976765236,
+      "upper": 63.370729976765574,
+      "quote": [
+        0.9845889190723096,
+        0.7839890683734357
+      ],
+      "checked_upper": 63.37072997676561,
+      "regrets": [
+        63.37072997676522,
+        63.37072997676561
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.031000000017229468,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 3
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 227.0402233509484,
+          "candidate": [
+            0.5079423136151362,
+            0.14412947998653344
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 9.157358680499403,
+          "candidate": [
+            0.4374157310547094,
+            0.020022711059236985
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4260373558314364,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4260373558314364,
+        0.0
+      ],
+      "checked_upper": 8.380062189901204e-13,
+      "regrets": [
+        8.380062189901204e-13,
+        8.905772517528726e-30
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 232,
+        "binary_variables": 94,
+        "linear_constraints": 151,
+        "quadratic_constraints": 5,
+        "general_constraints": 348
+      },
+      "elapsed_seconds": 0.06300000002374873,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.999999999999999,
+          9.861675007593325e-16
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "3293496777258514/7730535203494223",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 4
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 304.74926907299005,
+          "candidate": [
+            0.9839895595232485,
+            0.9533911401824748
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 100.42016322203193,
+          "upper": 100.42016422536051,
+          "candidate": [
+            0.8837215810960842,
+            0.7791980628752948
+          ],
+          "raw_bound": 100.42016422203193,
+          "rules": 6
+        }
+      ],
+      "lower": 100.42016322203193,
+      "upper": 100.42016422536051,
+      "quote": [
+        0.8837215810960842,
+        0.7791980628752948
+      ],
+      "checked_upper": 100.42016422536072,
+      "regrets": [
+        100.42016421204796,
+        100.42016422536072
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0470000000204891,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 5
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 804.8440485670285,
+          "candidate": [
+            0.7088775419855144,
+            0.19910651564191942
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 264.63553397393287,
+          "upper": 264.6356044385734,
+          "candidate": [
+            0.5505626789215575,
+            0.21439929852676198
+          ],
+          "raw_bound": 264.63553497393286,
+          "rules": 6
+        }
+      ],
+      "lower": 264.63553397393287,
+      "upper": 264.6356044385734,
+      "quote": [
+        0.5505626789215575,
+        0.21439929852676198
+      ],
+      "checked_upper": 264.6356044385741,
+      "regrets": [
+        264.6356044385669,
+        264.6356044385741
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.09399999998277053,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.7637718408653085,
+          0.2362281591346915
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 6
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 615.9105678054095,
+          "candidate": [
+            0.9585458888227006,
+            0.9560243823881429
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 63.452255072270304,
+          "upper": 115.73850032924838,
+          "candidate": [
+            0.7284691584276164,
+            0.4429743767769583
+          ],
+          "raw_bound": 63.4522560722703,
+          "rules": 6
+        }
+      ],
+      "lower": 63.452255072270304,
+      "upper": 115.73850032924838,
+      "quote": [
+        0.7284691584276164,
+        0.4429743767769583
+      ],
+      "checked_upper": 115.73850032924838,
+      "regrets": [
+        63.452288084467796,
+        115.73850032924838
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0779999999795109,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7168084890440148,
+          0.28319151095598516
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 7
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1911.249035485654,
+          "candidate": [
+            0.8258690646349334,
+            0.509049382393104
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 1.9326762412674725e-11,
+          "candidate": [
+            0.42603735583143665,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 1.9326762412674725e-11,
+      "quote": [
+        0.42603735583143665,
+        0.0
+      ],
+      "checked_upper": 1.7420755307459463e-11,
+      "regrets": [
+        1.7420755307459463e-11,
+        3.8486735552158635e-27
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.045999999972991645,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.9999999999999795,
+          2.050078189586766e-14
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "3293496777258514/7730535203494223",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 8
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1013.1718593300225,
+          "candidate": [
+            0.9942186876003807,
+            0.9903527234214651
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 260.1146526044414,
+          "upper": 260.1146536285736,
+          "candidate": [
+            0.5278757524847959,
+            0.21704991585140035
+          ],
+          "raw_bound": 260.1146536044414,
+          "rules": 6
+        }
+      ],
+      "lower": 260.1146526044414,
+      "upper": 260.1146536285736,
+      "quote": [
+        0.5278757524847959,
+        0.21704991585140035
+      ],
+      "checked_upper": 260.11465362857297,
+      "regrets": [
+        260.1146536282964,
+        260.11465362857297
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.0940000000409782,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7531126159798289,
+          0.24688738402017105
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 9
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1702.746361847568,
+          "candidate": [
+            0.5062882342165712,
+            0.12642469237781817
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 288.35707249279574,
+          "upper": 288.3571555557178,
+          "candidate": [
+            0.5008373595261866,
+            0.17111504639699862
+          ],
+          "raw_bound": 288.35707349279573,
+          "rules": 6
+        }
+      ],
+      "lower": 288.35707249279574,
+      "upper": 288.3571555557178,
+      "quote": [
+        0.5008373595261866,
+        0.17111504639699862
+      ],
+      "checked_upper": 288.3571555557176,
+      "regrets": [
+        288.3571555553441,
+        288.3571555557176
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.07800000003771856,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7108260484794863,
+          0.2891739515205137
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 10
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1998.7860144326692,
+          "candidate": [
+            0.9792729444113509,
+            0.990352723421465
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 427.0065764754586,
+          "candidate": [
+            0.5493964247924354,
+            0.25772504563488136
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 47.13349244028912,
+          "upper": 47.13349344029393,
+          "candidate": [
+            0.4222841585773646,
+            0.04561279430906262
+          ],
+          "raw_bound": 47.133493440289115,
+          "rules": 8
+        }
+      ],
+      "lower": 47.13349244028912,
+      "upper": 47.13349344029393,
+      "quote": [
+        0.4222841585773646,
+        0.04561279430906262
+      ],
+      "checked_upper": 47.133493440294046,
+      "regrets": [
+        47.133493440294046,
+        47.13349344028862
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.0779999999795109,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 11
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1833.8005077233745,
+          "candidate": [
+            0.5493964247924354,
+            0.0879512352237144
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 92.35396868862897,
+          "candidate": [
+            0.4374157310547094,
+            0.07086285081296272
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 8.638682287029738,
+          "candidate": [
+            0.4065124563078628,
+            0.019294553157068954
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.3949498315086245,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.3949498315086245,
+        0.0
+      ],
+      "checked_upper": 2.945982677389064e-12,
+      "regrets": [
+        2.945982677389064e-12,
+        1.2656410975771343e-28
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999999962,
+          3.827643957057343e-15
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 12
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 684.478038796175,
+          "candidate": [
+            0.7100497330349129,
+            0.20251894444924098
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 260.11461856783535,
+          "upper": 260.11465362855427,
+          "candidate": [
+            0.5278757524848046,
+            0.2170499158514145
+          ],
+          "raw_bound": 260.11461956783535,
+          "rules": 6
+        }
+      ],
+      "lower": 260.11461856783535,
+      "upper": 260.11465362855427,
+      "quote": [
+        0.5278757524848046,
+        0.2170499158514145
+      ],
+      "checked_upper": 260.1146536285543,
+      "regrets": [
+        260.114653628317,
+        260.1146536285543
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.07900000002700835,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7531126159798136,
+          0.24688738402018634
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 13
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1690.9137197520417,
+          "candidate": [
+            0.5066127124381484,
+            0.1272515102695485
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 288.3571160644374,
+          "upper": 288.3571555556068,
+          "candidate": [
+            0.5008373595262288,
+            0.17111504639706618
+          ],
+          "raw_bound": 288.3571170644374,
+          "rules": 6
+        }
+      ],
+      "lower": 288.3571160644374,
+      "upper": 288.3571555556068,
+      "quote": [
+        0.5008373595262288,
+        0.17111504639706618
+      ],
+      "checked_upper": 288.35715555560677,
+      "regrets": [
+        288.3571555555165,
+        288.35715555560677
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.11000000004423782,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.710826048479339,
+          0.289173951520661
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 14
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2242.9116032055595,
+          "candidate": [
+            0.9839895595232486,
+            0.9999999999999989
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 669.2302272002032,
+          "candidate": [
+            0.5493964247924354,
+            0.0879512352237142
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 8.638682287030328,
+          "candidate": [
+            0.40651245630786326,
+            0.019294553157069766
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 8.86757334228605e-12,
+          "candidate": [
+            0.39494983150862456,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 9
+        }
+      ],
+      "lower": 0.0,
+      "upper": 8.86757334228605e-12,
+      "quote": [
+        0.39494983150862456,
+        0.0
+      ],
+      "checked_upper": 6.641050857842001e-12,
+      "regrets": [
+        6.641050857842001e-12,
+        6.431670740519245e-28
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 302,
+        "binary_variables": 124,
+        "linear_constraints": 201,
+        "quadratic_constraints": 7,
+        "general_constraints": 448
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999999913,
+          8.628556569469724e-15
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 15
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1031.8592362146685,
+          "candidate": [
+            0.5493964247924354,
+            0.21707695043229858
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 92.35396868862897,
+          "candidate": [
+            0.4374157310547094,
+            0.07086285081296272
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 8.638682287030425,
+          "candidate": [
+            0.40651245630786337,
+            0.019294553157069926
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 2.2737367544323206e-13,
+          "candidate": [
+            0.39494983150862456,
+            1.1102230246251565e-16
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 2.2737367544323206e-13,
+      "quote": [
+        0.39494983150862456,
+        1.1102230246251565e-16
+      ],
+      "checked_upper": 2.212372294479845e-12,
+      "regrets": [
+        2.212372294479845e-12,
+        7.163243935381219e-29
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.18699999997625127,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999999971,
+          2.8744817505960197e-15
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 16
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1.6768808563938364e-11,
+          "candidate": [
+            0.9999999999999958,
+            0.9560243823881429
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        }
+      ],
+      "lower": 0.0,
+      "upper": 1.6768808563938364e-11,
+      "quote": [
+        0.9999999999999958,
+        0.9560243823881429
+      ],
+      "checked_upper": 1.6720954491116675e-11,
+      "regrets": [
+        7.607130924588756e-12,
+        1.6720954491116675e-11
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 130,
+        "binary_variables": 50,
+        "linear_constraints": 79,
+        "quadratic_constraints": 2,
+        "general_constraints": 200
+      },
+      "elapsed_seconds": 0.01600000000325963,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          4.2353245415350205e-14,
+          0.9999999999999577
+        ]
+      ],
+      "exact_witness": [
+        "1",
+        "239032441602301/250027557880061"
+      ]
+    },
+    {
+      "key": {
+        "free": 17
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 174.82139904410107,
+          "candidate": [
+            0.48450522802965923,
+            0.10288686111167283
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 174.82139904410107,
+          "candidate": [
+            0.936516392578812,
+            0.8982982239576733
+          ],
+          "raw_bound": 0.0,
+          "rules": 5
+        },
+        {
+          "round": 3,
+          "lower": 142.44811616208023,
+          "upper": 142.44820945703492,
+          "candidate": [
+            0.4934726886538129,
+            0.11581267547974715
+          ],
+          "raw_bound": 142.44811716208022,
+          "rules": 7
+        }
+      ],
+      "lower": 142.44811616208023,
+      "upper": 142.44820945703492,
+      "quote": [
+        0.4934726886538129,
+        0.11581267547974715
+      ],
+      "checked_upper": 142.44820945703424,
+      "regrets": [
+        142.4482094569344,
+        142.44820945703424
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.8574433183503085,
+          0.1425566816496915
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 18
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 316.5562513723752,
+          "candidate": [
+            0.8774603757489241,
+            0.7839890683734363
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 63.37072897676478,
+          "upper": 63.370729976766484,
+          "candidate": [
+            0.9845889190723106,
+            0.7839890683734358
+          ],
+          "raw_bound": 63.37072997676478,
+          "rules": 6
+        }
+      ],
+      "lower": 63.37072897676478,
+      "upper": 63.370729976766484,
+      "quote": [
+        0.9845889190723106,
+        0.7839890683734358
+      ],
+      "checked_upper": 63.37072997676652,
+      "regrets": [
+        63.37072997676111,
+        63.37072997676652
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.046999999962281436,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 19
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1333.6531640270564,
+          "candidate": [
+            0.8648017940100774,
+            0.7570995521983886
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 227.04022335094734,
+          "candidate": [
+            0.5079423136151359,
+            0.1441294799865329
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 9.157358680499717,
+          "candidate": [
+            0.4374157310547095,
+            0.020022711059236985
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 2.2737367544323206e-13,
+          "candidate": [
+            0.42603735583143637,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 2.2737367544323206e-13,
+      "quote": [
+        0.42603735583143637,
+        0.0
+      ],
+      "checked_upper": 2.075560593257835e-13,
+      "regrets": [
+        2.075560593257835e-13,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "3293496777258514/7730535203494223",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 20
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 125.57318745856381,
+          "candidate": [
+            0.8168228741229341,
+            0.5133520144372254
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 125.57318745856381,
+          "candidate": [
+            0.9547495280144045,
+            0.9148777616933932
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 75.87022914430007,
+          "upper": 75.87023014430906,
+          "candidate": [
+            0.8445836089341479,
+            0.647880987708058
+          ],
+          "raw_bound": 75.87023014430007,
+          "rules": 7
+        }
+      ],
+      "lower": 75.87022914430007,
+      "upper": 75.87023014430906,
+      "quote": [
+        0.8445836089341479,
+        0.647880987708058
+      ],
+      "checked_upper": 75.87023014430932,
+      "regrets": [
+        75.87023014430932,
+        75.87023014429738
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 21
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 741.6585765196842,
+          "candidate": [
+            0.6219295163810851,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 193.0338955200555,
+          "candidate": [
+            0.43741573105470893,
+            0.020022711059236985
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 142.44816631527945,
+          "upper": 142.4482094571224,
+          "candidate": [
+            0.49347268865374383,
+            0.11581267547962876
+          ],
+          "raw_bound": 142.44816731527945,
+          "rules": 7
+        }
+      ],
+      "lower": 142.44816631527945,
+      "upper": 142.4482094571224,
+      "quote": [
+        0.49347268865374383,
+        0.11581267547962876
+      ],
+      "checked_upper": 142.44820945712348,
+      "regrets": [
+        142.44820945675747,
+        142.44820945712348
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.8574433183504647,
+          0.14255668164953533
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 22
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 539.6788146674506,
+          "candidate": [
+            0.9454401000485141,
+            0.9122264214857015
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 63.45228707479001,
+          "upper": 115.73850032994685,
+          "candidate": [
+            0.7284691584273247,
+            0.4429743767767559
+          ],
+          "raw_bound": 63.452288074790005,
+          "rules": 6
+        }
+      ],
+      "lower": 63.45228707479001,
+      "upper": 115.73850032994685,
+      "quote": [
+        0.7284691584273247,
+        0.4429743767767559
+      ],
+      "checked_upper": 115.73850032994683,
+      "regrets": [
+        63.45228808380661,
+        115.73850032994683
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.09299999999348074,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.7168084890487493,
+          0.2831915109512507
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 23
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 756.7998622170402,
+          "candidate": [
+            0.672504065520738,
+            0.43371145853371695
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.4260373558314364,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.4260373558314364,
+        0.0
+      ],
+      "checked_upper": 8.380062189901204e-13,
+      "regrets": [
+        8.380062189901204e-13,
+        8.905772517528726e-30
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06299999996554106,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.999999999999999,
+          9.861675007593325e-16
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "3293496777258514/7730535203494223",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 24
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 248.85362753532718,
+          "candidate": [
+            0.4927195993162096,
+            0.1631484213032678
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 130.1992785529515,
+          "upper": 137.71736137116295,
+          "candidate": [
+            0.46105653287128723,
+            0.16314842130326765
+          ],
+          "raw_bound": 130.1992795529515,
+          "rules": 6
+        }
+      ],
+      "lower": 130.1992785529515,
+      "upper": 137.71736137116295,
+      "quote": [
+        0.46105653287128723,
+        0.16314842130326765
+      ],
+      "checked_upper": 137.71736137116295,
+      "regrets": [
+        130.19927955295358,
+        137.71736137116295
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 200,
+        "binary_variables": 80,
+        "linear_constraints": 129,
+        "quadratic_constraints": 4,
+        "general_constraints": 300
+      },
+      "elapsed_seconds": 0.06300000002374873,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 25
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 760.859571931161,
+          "candidate": [
+            0.4260373558314364,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 760.859571931161,
+          "candidate": [
+            0.929387069939947,
+            0.8918154731363063
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 130.96026427062884,
+          "upper": 144.35486599176096,
+          "candidate": [
+            0.4673293437843086,
+            0.11805471631902614
+          ],
+          "raw_bound": 130.96026527062884,
+          "rules": 7
+        }
+      ],
+      "lower": 130.96026427062884,
+      "upper": 144.35486599176096,
+      "quote": [
+        0.4673293437843086,
+        0.11805471631902614
+      ],
+      "checked_upper": 144.35486599176082,
+      "regrets": [
+        130.96030938281933,
+        144.35486599176082
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.125,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.8587693106627402,
+          0.14123068933725985
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 26
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1837.7285088849728,
+          "candidate": [
+            0.9353481545930932,
+            0.9018950630215239
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 427.00657647545097,
+          "candidate": [
+            0.5493964247924347,
+            0.2577250456348799
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 47.13349244028978,
+          "upper": 47.133493440291886,
+          "candidate": [
+            0.42228415857736507,
+            0.04671628262185227
+          ],
+          "raw_bound": 47.133493440289776,
+          "rules": 8
+        }
+      ],
+      "lower": 47.13349244028978,
+      "upper": 47.133493440291886,
+      "quote": [
+        0.42228415857736507,
+        0.04671628262185227
+      ],
+      "checked_upper": 47.133493440291964,
+      "regrets": [
+        47.133493440291964,
+        47.13349344028994
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 270,
+        "binary_variables": 110,
+        "linear_constraints": 179,
+        "quadratic_constraints": 6,
+        "general_constraints": 400
+      },
+      "elapsed_seconds": 0.09399999998277053,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 27
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1909.013873132239,
+          "candidate": [
+            0.5539112564191305,
+            0.03507354355568799
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 58.34986660864227,
+          "candidate": [
+            0.4260373558314363,
+            0.05187575494170505
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.39494983150862445,
+            0.0
+          ],
+          "raw_bound": 2.2737367544323206e-13,
+          "rules": 7
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.39494983150862445,
+        0.0
+      ],
+      "checked_upper": 5.2737223963309933e-14,
+      "regrets": [
+        5.2737223963309933e-14,
+        0.0
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.0779999999795109,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 28
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 2078.804696807815,
+          "candidate": [
+            0.9942186876003806,
+            1.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 197.8470094051694,
+          "candidate": [
+            0.4756518808806532,
+            0.1346675178455664
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 180.58497876985075,
+          "candidate": [
+            0.4065124563078627,
+            0.019294553157068954
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        },
+        {
+          "round": 4,
+          "lower": 133.3265393807306,
+          "upper": 133.32654688590742,
+          "candidate": [
+            0.46331160488613055,
+            0.11127577683888523
+          ],
+          "raw_bound": 133.3265403807306,
+          "rules": 9
+        }
+      ],
+      "lower": 133.3265393807306,
+      "upper": 133.32654688590742,
+      "quote": [
+        0.46331160488613055,
+        0.11127577683888523
+      ],
+      "checked_upper": 133.32654688590728,
+      "regrets": [
+        133.32654688576525,
+        133.32654688590728
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 305,
+        "binary_variables": 125,
+        "linear_constraints": 204,
+        "quadratic_constraints": 7,
+        "general_constraints": 450
+      },
+      "elapsed_seconds": 0.15700000000651926,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.8549061385563386,
+          0.1450938614436615
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 29
+      },
+      "decision": "numerical_exclusion",
+      "stop": "numerical_exclusion",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 760.859571931161,
+          "candidate": [
+            0.4260373558314364,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 760.859571931161,
+          "candidate": [
+            0.929387069939947,
+            0.8918154731363063
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 130.96023592108648,
+          "upper": 144.3548659918829,
+          "candidate": [
+            0.46732934378432783,
+            0.1180547163190652
+          ],
+          "raw_bound": 130.96023692108648,
+          "rules": 7
+        }
+      ],
+      "lower": 130.96023592108648,
+      "upper": 144.3548659918829,
+      "quote": [
+        0.46732934378432783,
+        0.1180547163190652
+      ],
+      "checked_upper": 144.35486599188187,
+      "regrets": [
+        130.9603093824885,
+        144.35486599188187
+      ],
+      "verified_exact_profiles": 0,
+      "model_size": {
+        "variables": 235,
+        "binary_variables": 95,
+        "linear_constraints": 154,
+        "quadratic_constraints": 5,
+        "general_constraints": 350
+      },
+      "elapsed_seconds": 0.1720000000204891,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.858769310663103,
+          0.14123068933689695
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": null
+    },
+    {
+      "key": {
+        "free": 30
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 794.9118968756121,
+          "candidate": [
+            0.6725040655207366,
+            0.46315477801104826
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 8.638682287030914,
+          "candidate": [
+            0.40651245630786353,
+            0.01929455315707025
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.3949498315086245,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.3949498315086245,
+        0.0
+      ],
+      "checked_upper": 2.945982677389064e-12,
+      "regrets": [
+        2.945982677389064e-12,
+        1.2656410975771343e-28
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 232,
+        "binary_variables": 94,
+        "linear_constraints": 151,
+        "quadratic_constraints": 5,
+        "general_constraints": 348
+      },
+      "elapsed_seconds": 0.09399999998277053,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999999962,
+          3.827643957057343e-15
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {
+        "free": 31
+      },
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 1879.5661887145702,
+          "candidate": [
+            0.5493964247924337,
+            0.029186944829357128
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 58.349866608642856,
+          "candidate": [
+            0.4260373558314365,
+            0.05187575494170538
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        },
+        {
+          "round": 3,
+          "lower": 0.0,
+          "upper": 8.63868228703062,
+          "candidate": [
+            0.40651245630786337,
+            0.019294553157070016
+          ],
+          "raw_bound": 0.0,
+          "rules": 7
+        },
+        {
+          "round": 4,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.3949498315086245,
+            0.0
+          ],
+          "raw_bound": 0.0,
+          "rules": 8
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.3949498315086245,
+        0.0
+      ],
+      "checked_upper": 2.945982677389064e-12,
+      "regrets": [
+        2.945982677389064e-12,
+        1.2656410975771343e-28
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 267,
+        "binary_variables": 109,
+        "linear_constraints": 176,
+        "quadratic_constraints": 6,
+        "general_constraints": 398
+      },
+      "elapsed_seconds": 0.21799999999348074,
+      "case": "expiry",
+      "epsilon": 10.0,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.9999999999999962,
+          3.827643957057343e-15
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "exact_witness": [
+        "300452147965913/760734969345979",
+        "0"
+      ]
+    },
+    {
+      "key": {},
+      "decision": "approximate_equilibrium",
+      "stop": "approximate_equilibrium",
+      "trace": [
+        {
+          "round": 1,
+          "lower": 0.0,
+          "upper": 0.02106819737193799,
+          "candidate": [
+            0.6770342864361731,
+            0.6789322508922779
+          ],
+          "raw_bound": 0.0,
+          "rules": 4
+        },
+        {
+          "round": 2,
+          "lower": 0.0,
+          "upper": 0.0,
+          "candidate": [
+            0.899999993160931,
+            0.8999999931639625
+          ],
+          "raw_bound": 0.0,
+          "rules": 6
+        }
+      ],
+      "lower": 0.0,
+      "upper": 0.0,
+      "quote": [
+        0.899999993160931,
+        0.8999999931639625
+      ],
+      "checked_upper": 1.9505973849961634e-17,
+      "regrets": [
+        1.9505973849961634e-17,
+        1.945415435988716e-17
+      ],
+      "verified_exact_profiles": 1,
+      "model_size": {
+        "variables": 194,
+        "binary_variables": 78,
+        "linear_constraints": 123,
+        "quadratic_constraints": 4,
+        "general_constraints": 296
+      },
+      "elapsed_seconds": 0.1559999999590218,
+      "case": "control",
+      "epsilon": 0.3,
+      "origin": "COPT",
+      "affiliation_probabilities": [
+        [
+          0.5000000000050524,
+          0.49999999999494754
+        ],
+        [
+          0.5000000000050524,
+          0.49999999999494754
+        ],
+        [
+          0.5000000000050524,
+          0.49999999999494754
+        ],
+        [
+          0.5000000000050524,
+          0.49999999999494754
+        ],
+        [
+          0.5000000000050524,
+          0.49999999999494754
+        ]
+      ],
+      "exact_witness": [
+        "58413339658516809740104173134807/64903710731685348959510906011648",
+        "58413339658516809740104173134807/64903710731685348959510906011648"
+      ]
+    }
+  ]
+}
