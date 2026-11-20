@@ -1,14 +1,11 @@
 {
-  "sources_sha256": {
-    "small/results.json": "1918279ace772453d85df8ec604962688b227fb4ab24e7bc822f315180251216",
-    "large/results.json": "ffbd926c3d5b18e0da4de4a9aa0bbf5d73a182d7e421d65995e3a571b66a635f",
-    "sensitivity/copt_results.json": "fd4d5107e0b2253123246ea00360786e7a6762f1a83f0769b4c491735dc2ee34",
-    "sensitivity/results.json": "a37fd197851f2b5355f3fc27dc3f01b88c259bf40c1c0d47a5fa0dad4e6c74b1",
-    "alternative/refinement/frozen.json": "b4f66bd553727a4155cb3e9df2d58b3db57683d8ffbc531c3316f9ca1dedd34d",
-    "alternative/search/comparison.json": "7f178bd67713afb76cbfa8582d9138c9989477abd2a919ff0c60e692f3f7be7f"
-  },
   "solver": "COPT 8.0.6",
-  "case": "Frozen manuscript payoff coefficients",
+  "case": "Coalition profits obtained from the electricity market participation model.",
+  "sources_sha256": {
+    "paper_rebuilt/five/five_data.json": "a2eb19f1b2f2f87d68de1d44e429d6efdb5c331f15d54ec2b231de4c651a76f1",
+    "paper_rebuilt/twenty/twenty.json": "7e56cc1f40c4137dc2313159cd15827f0e042e3429c6e079f29d32b40d5e9a62",
+    "paper_rebuilt/sensitivity/summary.json": "d009e2b50106f1a6c872cac610040f364a5bec37091bc8a5706f81ce99007005"
+  },
   "five": {
     "gains": [
       {
@@ -21,15 +18,15 @@
       {
         "expired": "ESS",
         "vppo": [
-          1042.736785475911,
-          895.2363023711973
+          1042.7367525072086,
+          895.3105460532693
         ]
       },
       {
         "expired": "All",
         "vppo": [
-          2879.197585603485,
-          2405.338905259712
+          2879.1941908375697,
+          2405.4130381522646
         ]
       }
     ],
@@ -37,108 +34,237 @@
       {
         "round": 0,
         "lower": 0.0,
-        "upper": 655.4073154873981
+        "upper": 655.2142233263739
       },
       {
         "round": 1,
         "lower": 0.0,
-        "upper": 655.4073154873981
+        "upper": 655.2142233263739
       },
       {
         "round": 2,
         "lower": 0.0,
-        "upper": 204.79747837811186
+        "upper": 346.44978957086886
       },
       {
         "round": 3,
-        "lower": 93.71125893391252,
-        "upper": 204.79747837811186
+        "lower": 30.358831591653935,
+        "upper": 235.15631097035157
       },
       {
         "round": 4,
-        "lower": 160.84214468215268,
-        "upper": 160.84222056204447
+        "lower": 160.83751738941956,
+        "upper": 160.83760653206784
       }
     ],
     "first_exclusion_round": 3
   },
   "twenty": {
-    "procedure": "Endpoint-initialized CCG",
-    "full_domain": [
+    "trace": [
       {
+        "iteration": 1,
+        "stage": "full_domain",
         "round": 1,
-        "upper": 16948.816108617364
+        "lower": 0.0,
+        "upper": 16948.768281439683
       },
       {
+        "iteration": 2,
+        "stage": "full_domain",
         "round": 2,
-        "upper": 7141.678306146108
+        "lower": 0.0,
+        "upper": 2948.2157324123564
       },
       {
+        "iteration": 3,
+        "stage": "full_domain",
         "round": 3,
-        "upper": 158.1267432212785
+        "lower": 0.0,
+        "upper": 2143.216355983275
       },
       {
+        "iteration": 4,
+        "stage": "full_domain",
         "round": 4,
-        "upper": 158.1267432212785
+        "lower": 0.0,
+        "upper": 470.75787245823904
       },
       {
-        "round": 5,
-        "upper": 158.1267432212785
+        "iteration": 5,
+        "stage": "refinement",
+        "round": 0,
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
-        "round": 6,
-        "upper": 158.1267432212785
-      },
-      {
-        "round": 7,
-        "upper": 158.1267432212785
-      },
-      {
-        "round": 8,
-        "upper": 123.1306791312877
-      }
-    ],
-    "cover": [
-      {
+        "iteration": 6,
+        "stage": "refinement",
         "round": 1,
-        "excluded": 0
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 7,
+        "stage": "refinement",
         "round": 2,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 8,
+        "stage": "refinement",
         "round": 3,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 9,
+        "stage": "refinement",
         "round": 4,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 10,
+        "stage": "refinement",
         "round": 5,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 11,
+        "stage": "refinement",
         "round": 6,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 12,
+        "stage": "refinement",
         "round": 7,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
       },
       {
+        "iteration": 13,
+        "stage": "refinement",
         "round": 8,
-        "excluded": 10
+        "lower": 0.0,
+        "upper": 97.24965918985606
+      },
+      {
+        "iteration": 14,
+        "stage": "refinement",
+        "round": 9,
+        "lower": 0.0,
+        "upper": 97.24965918985606
+      },
+      {
+        "iteration": 15,
+        "stage": "refinement",
+        "round": 10,
+        "lower": 0.0,
+        "upper": 97.24965918985606
+      },
+      {
+        "iteration": 16,
+        "stage": "refinement",
+        "round": 11,
+        "lower": 0.0,
+        "upper": 97.24965918985606
+      },
+      {
+        "iteration": 17,
+        "stage": "refinement",
+        "round": 12,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 18,
+        "stage": "refinement",
+        "round": 13,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 19,
+        "stage": "refinement",
+        "round": 14,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 20,
+        "stage": "refinement",
+        "round": 15,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 21,
+        "stage": "refinement",
+        "round": 16,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 22,
+        "stage": "refinement",
+        "round": 17,
+        "lower": 0.0,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 23,
+        "stage": "refinement",
+        "round": 18,
+        "lower": 2.829333488768061,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 24,
+        "stage": "refinement",
+        "round": 19,
+        "lower": 7.2646812899955835,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 25,
+        "stage": "refinement",
+        "round": 20,
+        "lower": 13.13166440414949,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 26,
+        "stage": "refinement",
+        "round": 21,
+        "lower": 17.693964519856493,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 27,
+        "stage": "refinement",
+        "round": 22,
+        "lower": 49.84961911019625,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 28,
+        "stage": "refinement",
+        "round": 23,
+        "lower": 59.180927096553106,
+        "upper": 97.24963770447299
+      },
+      {
+        "iteration": 29,
+        "stage": "refinement",
+        "round": 24,
+        "lower": 97.2496366018494,
+        "upper": 97.24963770447299
       }
-    ],
-    "total_boxes": 23,
-    "unresolved_boxes": 13,
-    "global_bounds": {
-      "decision_threshold": 0.001001,
-      "copt_refinement": 0.13981059428133086,
-      "integer_certificate": "280900077145363530304512658078439239885726824775/2854495385411919762116571938898990272765493248"
-    }
+    ]
   },
   "sensitivity": {
     "groups": [
@@ -147,6 +273,7 @@
         "total": 1280,
         "within": 182,
         "excluded": 1098,
+        "exact": 182,
         "unresolved": 0
       },
       {
@@ -154,6 +281,7 @@
         "total": 2000,
         "within": 880,
         "excluded": 1120,
+        "exact": 880,
         "unresolved": 0
       },
       {
@@ -161,6 +289,7 @@
         "total": 11008,
         "within": 1647,
         "excluded": 9361,
+        "exact": 1627,
         "unresolved": 0
       }
     ],
@@ -189,10 +318,6 @@
         "exact": 0,
         "unresolved": 0
       }
-    ],
-    "methods": {
-      "groups": "COPT rule-enhanced CCG plus complete rational best-response checks at unrounded candidate ratios.",
-      "pv2": "Exact rational full best-response checks at archived witnesses or feasible profiles; independent floating-point interval exclusion on the whole quote square, with 1e-6 margin."
-    }
+    ]
   }
 }

@@ -1,4 +1,4 @@
-"""Audit one minimax candidate with exact rational arithmetic, without Gurobi.
+"""Audit one minimax candidate with exact rational arithmetic.
 
 Every saved binary64 input is interpreted as its exact rational value. DER
 projection, original signed MATLAB profits and all unilateral maxima are then
@@ -22,9 +22,9 @@ from scipy.io import loadmat
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = ROOT / "inputs" / "twenty_case.mat"
-DEFAULT_CANDIDATE = ROOT.parents[1] / "large" / "runs" / "full_1.json"
-DEFAULT_OUTPUT = ROOT.parent / "results" / "full_candidate_audit.json"
+DEFAULT_SOURCE = ROOT / "data" / "twenty_case.mat"
+DEFAULT_CANDIDATE = ROOT / "runs" / "full_1.json"
+DEFAULT_OUTPUT = ROOT / "full_candidate_audit.json"
 ZERO = Fraction(0)
 ONE = Fraction(1)
 

@@ -22,7 +22,7 @@ from milp import solve_box
 
 ENGINE_SHA256 = hashlib.sha256((HERE/"milp.py").read_bytes()).hexdigest()
 THRESHOLD = .001001
-CASES = {"frozen": ROOT/"large/data/twenty_case.mat"}
+CASES = {"market": ROOT/"physical/twenty_end_to_end.mat"}
 
 
 def read(path):

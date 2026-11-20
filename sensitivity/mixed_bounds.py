@@ -6,7 +6,6 @@ from pathlib import Path
 import numpy as np
 from numba import njit
 from intervals import share, coefficients
-from run import inputs_for
 
 HERE = Path(__file__).resolve().parent
 
@@ -104,24 +103,4 @@ def certify(game, limit):
         pending += 2
     return (0. if pending else minimum),n
 
-
-def main():
-    design = json.loads((HERE/"design.json").read_bytes())
-    with (HERE/"outcomes.csv").open(newline="") as f:
-        rows = list(csv.DictReader(f))
-    with (HERE/"interval_retries.csv").open("w",newline="",encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["design_row","lower","boxes"])
-        for row in rows:
-            if row["decision"]!="unresolved":
-                continue
-            i = int(row["design_row"])
-            r = design["configurations"][i]
-            game = coefficients(inputs_for(design["markets"][r["market"]],r["key"]))
-            lower,n = certify(game,50000)
-            writer.writerow([i,lower,n])
-
-
-if __name__=="__main__":
-    main()
 

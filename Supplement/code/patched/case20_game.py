@@ -19,7 +19,7 @@ from scipy.io import loadmat
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "inputs" / "twenty_case.mat"
+SOURCE = ROOT / "20DER_Case/Contract_Market_Output/Save_Temp_20DER.mat"
 
 
 # Compute regularized simplex response probabilities using sorted offers and water levels.

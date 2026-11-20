@@ -1,0 +1,357 @@
+{
+  "problem": "min_x max_i max_z [U_i(z,x_-i)-U_i(x)]",
+  "vpp_count": 4,
+  "der_count": 20,
+  "epsilon": 0.1,
+  "tau": 0.001,
+  "policy_mode": "capture",
+  "strategy_bounds": [
+    [
+      0.0,
+      0.25
+    ],
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.0,
+      0.25
+    ],
+    [
+      0.0,
+      0.25
+    ]
+  ],
+  "threads": 2,
+  "verification_scope": "strategy_box",
+  "configuration": {
+    "seconds": 60,
+    "round_seconds": 30,
+    "max_rounds": 40,
+    "target_absolute_gap": 0.001,
+    "stop_on_verified": false,
+    "decision_margin": 1e-06,
+    "strategy_bounds": [
+      [
+        0.0,
+        0.25
+      ],
+      [
+        0.25,
+        0.5
+      ],
+      [
+        0.0,
+        0.25
+      ],
+      [
+        0.0,
+        0.25
+      ]
+    ],
+    "threads": 2,
+    "initial_policy_count": 0,
+    "presolve": 0
+  },
+  "stop_reason": "numerical_exclusion",
+  "decision": "numerical_exclusion",
+  "lower_bound": 52.899258966128485,
+  "raw_solver_lower_bound": 52.89925996612848,
+  "upper_bound": 645.7137249881862,
+  "absolute_gap": 592.8144660220577,
+  "bounds_overlap_within_tolerance": false,
+  "exact_certificate": false,
+  "certificate_type": "floating_point_global_master_and_piecewise_br_bounds",
+  "elapsed_seconds": 10.797000000020489,
+  "best_candidate": {
+    "x": [
+      0.10743790413389954,
+      0.2700629656606142,
+      0.0,
+      0.24999999999999978
+    ],
+    "profits": [
+      2101.5714097999507,
+      4963.4505207961865,
+      1000.0,
+      3918.7533713794483
+    ],
+    "shares": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0231815394945443e-12,
+        0.9999999999989768,
+        0.0,
+        0.0
+      ]
+    ],
+    "best_response_actions": [
+      0.10743790413389993,
+      0.23336316693396789,
+      0.04291934623107167,
+      0.25398487429213057
+    ],
+    "best_response_profits": [
+      2101.5714098004137,
+      5609.164245784373,
+      1216.820423295236,
+      3971.6526313452046
+    ],
+    "regrets": [
+      4.6293280320242047e-10,
+      645.7137249881862,
+      216.82042329523597,
+      52.8992599657563
+    ],
+    "maximum_regret": 645.7137249881862
+  },
+  "deviation_policies": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "departure",
+        "der": 19,
+        "offset": 1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 3,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 12,
+        "offset": -1
+      }
+    ]
+  ],
+  "model_size": {
+    "variables": 2405,
+    "binary_variables": 1068,
+    "linear_constraints": 1364,
+    "quadratic_constraints": 8,
+    "general_constraints": 4216
+  },
+  "history": [
+    {
+      "round": 1,
+      "master_status": 1,
+      "master_objective": 0.0,
+      "lower_bound": 0.0,
+      "raw_solver_lower_bound": 0.0,
+      "upper_bound": 2847.756703770856,
+      "absolute_gap": 2847.756703770856,
+      "elapsed_seconds": 0.09399999998277053,
+      "policies": 8,
+      "x1": 0.25,
+      "x2": 0.5,
+      "x3": 0.25,
+      "x4": 0.25,
+      "regret1": 103.7830182562509,
+      "regret2": 2360.144616022384,
+      "regret3": 77.95058023048978,
+      "regret4": 2847.756703770856
+    },
+    {
+      "round": 2,
+      "master_status": 1,
+      "master_objective": 52.89925996612848,
+      "lower_bound": 52.899258966128485,
+      "raw_solver_lower_bound": 52.89925996612848,
+      "upper_bound": 645.7137249881862,
+      "absolute_gap": 592.8144660220577,
+      "elapsed_seconds": 10.797000000020489,
+      "policies": 12,
+      "x1": 0.10743790413389954,
+      "x2": 0.2700629656606142,
+      "x3": 0.0,
+      "x4": 0.24999999999999978,
+      "regret1": 4.6293280320242047e-10,
+      "regret2": 645.7137249881862,
+      "regret3": 216.82042329523597,
+      "regret4": 52.8992599657563
+    }
+  ],
+  "source_sha256": "fd60a6b9751b2f1abcf4c22807b0c5ce5d1e8c64609f1632c2d463a87d511f04",
+  "external_checked_upper": 348.0624645210931
+}

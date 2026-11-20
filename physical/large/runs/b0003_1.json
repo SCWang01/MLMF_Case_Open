@@ -1,0 +1,357 @@
+{
+  "problem": "min_x max_i max_z [U_i(z,x_-i)-U_i(x)]",
+  "vpp_count": 4,
+  "der_count": 20,
+  "epsilon": 0.1,
+  "tau": 0.001,
+  "policy_mode": "capture",
+  "strategy_bounds": [
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.5,
+      1.0
+    ]
+  ],
+  "threads": 2,
+  "verification_scope": "strategy_box",
+  "configuration": {
+    "seconds": 60,
+    "round_seconds": 30,
+    "max_rounds": 40,
+    "target_absolute_gap": 0.001,
+    "stop_on_verified": false,
+    "decision_margin": 1e-06,
+    "strategy_bounds": [
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        0.5,
+        1.0
+      ]
+    ],
+    "threads": 2,
+    "initial_policy_count": 0,
+    "presolve": 0
+  },
+  "stop_reason": "numerical_exclusion",
+  "decision": "numerical_exclusion",
+  "lower_bound": 136.53404038695533,
+  "raw_solver_lower_bound": 136.53404138695532,
+  "upper_bound": 2947.0800577714235,
+  "absolute_gap": 2810.546017384468,
+  "bounds_overlap_within_tolerance": false,
+  "exact_certificate": false,
+  "certificate_type": "floating_point_global_master_and_piecewise_br_bounds",
+  "elapsed_seconds": 2.469000000040978,
+  "best_candidate": {
+    "x": [
+      0.33849318521192245,
+      0.27037718508233083,
+      0.5,
+      0.5
+    ],
+    "profits": [
+      3604.0407203288314,
+      7386.909728059223,
+      863.4659586130474,
+      3435.5675727193548
+    ],
+    "shares": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.8389305753705685,
+        0.0,
+        0.0,
+        0.16106942462943152
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "best_response_actions": [
+      0.3198203559150843,
+      0.48859075731764856,
+      0.23084698317260963,
+      0.3942132810201609
+    ],
+    "best_response_profits": [
+      4505.4185272504965,
+      10333.989785830647,
+      2920.0522392559983,
+      5833.186621712855
+    ],
+    "regrets": [
+      901.3778069216651,
+      2947.0800577714235,
+      2056.586280642951,
+      2397.6190489935007
+    ],
+    "maximum_regret": 2947.0800577714235
+  },
+  "deviation_policies": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 11,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 13,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ]
+  ],
+  "model_size": {
+    "variables": 2405,
+    "binary_variables": 1068,
+    "linear_constraints": 1364,
+    "quadratic_constraints": 8,
+    "general_constraints": 4216
+  },
+  "history": [
+    {
+      "round": 1,
+      "master_status": 1,
+      "master_objective": 0.0,
+      "lower_bound": 0.0,
+      "raw_solver_lower_bound": 0.0,
+      "upper_bound": 7625.137342670274,
+      "absolute_gap": 7625.137342670274,
+      "elapsed_seconds": 0.0940000000409782,
+      "policies": 8,
+      "x1": 0.5,
+      "x2": 0.5,
+      "x3": 0.5002861542184999,
+      "x4": 1.0,
+      "regret1": 173.96740110979772,
+      "regret2": 225.69450510970637,
+      "regret3": 6178.171730548403,
+      "regret4": 7625.137342670274
+    },
+    {
+      "round": 2,
+      "master_status": 1,
+      "master_objective": 136.53404138695532,
+      "lower_bound": 136.53404038695533,
+      "raw_solver_lower_bound": 136.53404138695532,
+      "upper_bound": 2947.0800577714235,
+      "absolute_gap": 2810.546017384468,
+      "elapsed_seconds": 2.469000000040978,
+      "policies": 12,
+      "x1": 0.33849318521192245,
+      "x2": 0.27037718508233083,
+      "x3": 0.5,
+      "x4": 0.5,
+      "regret1": 901.3778069216651,
+      "regret2": 2947.0800577714235,
+      "regret3": 2056.586280642951,
+      "regret4": 2397.6190489935007
+    }
+  ],
+  "source_sha256": "fd60a6b9751b2f1abcf4c22807b0c5ce5d1e8c64609f1632c2d463a87d511f04",
+  "external_checked_upper": 2566.5906990893363
+}

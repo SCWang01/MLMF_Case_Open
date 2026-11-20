@@ -1,4 +1,4 @@
-"""Recompute all five-background-plus-one-target coalitions using COPT dispatch."""
+"""Compute recruitment offers from COPT market-participation profits."""
 import csv
 import hashlib
 import itertools
@@ -9,7 +9,7 @@ from importlib.metadata import version
 from pathlib import Path
 
 import numpy as np
-from dispatch import solve
+from market_participation import solve
 
 HERE = Path(__file__).resolve().parent
 INPUT = HERE / 'inputs' / 'five.npz'
@@ -89,7 +89,7 @@ def main():
             threshold=[1-(.5*ref[0]+.1)/a[0],1-(.5*ref[2]+.1)/a[1],1-(.5*ref[1]+.1)/a[2]]
             next(row for row in rows[name] if row[0]==level).append(threshold)
     record={'treatments':rows,'requested_coalitions':512,'unique_coalitions':len(groups),
-            'max_dispatch_absolute_gap':max(b-a for a,b in values.values()),'solver':'COPT',
+            'max_market_profit_absolute_gap':max(b-a for a,b in values.values()),'solver':'COPT',
             'coptpy':version('coptpy'),'input_sha256':hashlib.sha256(INPUT.read_bytes()).hexdigest()}
     TREATMENTS.write_text(json.dumps(record,indent=2,allow_nan=False),encoding='utf8')
     print(json.dumps(record),flush=True)

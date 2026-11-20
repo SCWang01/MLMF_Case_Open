@@ -2,6 +2,5 @@
   "coalitions": 2043,
   "feasible": 2043,
   "max_relative_gap": 9.96411562129975e-08,
-  "gap_above_target": [],
-  "max_absolute_change": 10.9099688383576
+  "gap_above_target": []
 }

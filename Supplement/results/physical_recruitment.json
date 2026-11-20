@@ -151,7 +151,7 @@
   },
   "requested_coalitions": 512,
   "unique_coalitions": 184,
-  "max_dispatch_absolute_gap": 0.0008410664449911565,
+  "max_market_profit_absolute_gap": 0.0008410664449911565,
   "solver": "COPT",
   "coptpy": "8.0.6",
   "input_sha256": "11871eb3d235dcd3b41c720d729239c7328053569462f85cb4122826e16cbe70"

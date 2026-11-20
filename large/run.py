@@ -18,7 +18,7 @@ import scipy
 from audit_minimax_4vpp_candidate import ExactGame
 from solve_minimax_4vpp import read_game, solve_minimax
 
-SOURCE = ROOT / "data" / "twenty_case.mat"
+SOURCE = ROOT.parent / "physical/twenty_end_to_end.mat"
 BOX_FILE = ROOT / "data" / "twenty_boxes.json"
 TAU = 0.001
 DELTA = 1e-6
@@ -157,7 +157,7 @@ def run(workers, output, resume, presolve=0, source=SOURCE):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=5)
-    parser.add_argument("--output", type=Path, default=ROOT / "runs")
+    parser.add_argument("--output", type=Path, default=ROOT.parent / "physical/large/runs")
     parser.add_argument("--resume", action="store_true", help="reuse complete per-case JSONs in this output directory")
     parser.add_argument("--presolve", type=int, choices=[-1, 0], default=0)
     parser.add_argument("--source", type=Path, default=SOURCE)

@@ -58,32 +58,3 @@ def player_optimum(game,quote,v):
     return dict(regret=best[0]-current_payoff(quote[v]),action=best[1],segments=len(cut)-1)
 
 
-def main():
-    for case in ("frozen","dispatch"):
-        src=HERE.parent/("large/data/twenty_case.mat" if case=="frozen" else "physical/twenty_end_to_end.mat")
-        if case=="frozen":
-            q=json.loads((HERE.parent/"large/data/refinement_rules.json").read_bytes())["quote"]
-        else:
-            q=json.loads((HERE/"dispatch_quote.json").read_bytes())["best_feasible"]["quote"]
-        game=read_game(src)
-        quote=tuple(map(F,q))
-        if any(not 0<=x<=1 for x in quote):
-            raise ValueError("Candidate quote out of range")
-        results=[player_optimum(game,quote,v) for v in range(4)]
-        upper=max(r["regret"] for r in results)
-        lower=F(json.loads((HERE/f"certificate_{case}.json").read_bytes())["rational_lower"])
-        if lower>upper:
-            raise ArithmeticError("Certified lower exceeds candidate upper")
-        output=dict(quote=q,regrets=[float(r["regret"]) for r in results],
-                    exact_regrets=[str(r["regret"]) for r in results],
-                    optimal_deviations=[str(r["action"]) for r in results],
-                    payoff_segments_per_player=[r["segments"] for r in results],
-                    exact_global_lower=str(lower),global_lower=float(lower),exact_candidate_upper=str(upper),
-                    candidate_upper=float(upper))
-        (HERE/f"candidate_{case}.json").write_text(json.dumps(output,indent=2)+"\n",encoding="utf-8")
-        print(case,float(lower),float(upper),output["regrets"])
-
-
-if __name__=="__main__":
-    main()
-

@@ -1,0 +1,357 @@
+{
+  "problem": "min_x max_i max_z [U_i(z,x_-i)-U_i(x)]",
+  "vpp_count": 4,
+  "der_count": 20,
+  "epsilon": 0.1,
+  "tau": 0.001,
+  "policy_mode": "capture",
+  "strategy_bounds": [
+    [
+      0.5,
+      1.0
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ]
+  ],
+  "threads": 2,
+  "verification_scope": "strategy_box",
+  "configuration": {
+    "seconds": 60,
+    "round_seconds": 30,
+    "max_rounds": 40,
+    "target_absolute_gap": 0.001,
+    "stop_on_verified": false,
+    "decision_margin": 1e-06,
+    "strategy_bounds": [
+      [
+        0.5,
+        1.0
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.5,
+        1.0
+      ]
+    ],
+    "threads": 2,
+    "initial_policy_count": 0,
+    "presolve": 0
+  },
+  "stop_reason": "numerical_exclusion",
+  "decision": "numerical_exclusion",
+  "lower_bound": 909.8641930024365,
+  "raw_solver_lower_bound": 909.8641940024365,
+  "upper_bound": 2570.612525892756,
+  "absolute_gap": 1660.7483328903195,
+  "bounds_overlap_within_tolerance": false,
+  "exact_certificate": false,
+  "certificate_type": "floating_point_global_master_and_piecewise_br_bounds",
+  "elapsed_seconds": 7.7810000000172295,
+  "best_candidate": {
+    "x": [
+      0.5000000000000034,
+      0.1288139374726215,
+      0.0,
+      1.0
+    ],
+    "profits": [
+      1741.9280048644873,
+      4193.152746145616,
+      1250.0,
+      1741.0954576790973
+    ],
+    "shares": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "best_response_actions": [
+      0.08807684402066006,
+      0.23336316693396789,
+      0.14841627298907487,
+      0.2895871856135803
+    ],
+    "best_response_profits": [
+      2834.9001377538793,
+      5976.271249873534,
+      2323.710930248983,
+      4311.707983571853
+    ],
+    "regrets": [
+      1092.972132889392,
+      1783.1185037279174,
+      1073.710930248983,
+      2570.612525892756
+    ],
+    "maximum_regret": 2570.612525892756
+  },
+  "deviation_policies": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 11,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 13,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 4,
+        "offset": -1
+      }
+    ]
+  ],
+  "model_size": {
+    "variables": 2405,
+    "binary_variables": 1068,
+    "linear_constraints": 1364,
+    "quadratic_constraints": 8,
+    "general_constraints": 4216
+  },
+  "history": [
+    {
+      "round": 1,
+      "master_status": 1,
+      "master_objective": 0.0,
+      "lower_bound": 0.0,
+      "raw_solver_lower_bound": 0.0,
+      "upper_bound": 7625.137342670274,
+      "absolute_gap": 7625.137342670274,
+      "elapsed_seconds": 0.10899999999674037,
+      "policies": 8,
+      "x1": 0.7835963320467128,
+      "x2": 0.5,
+      "x3": 0.5,
+      "x4": 1.0,
+      "regret1": 4496.094296483486,
+      "regret2": 685.4325508872444,
+      "regret3": 4820.088402070688,
+      "regret4": 7625.137342670274
+    },
+    {
+      "round": 2,
+      "master_status": 1,
+      "master_objective": 909.8641940024365,
+      "lower_bound": 909.8641930024365,
+      "raw_solver_lower_bound": 909.8641940024365,
+      "upper_bound": 2570.612525892756,
+      "absolute_gap": 1660.7483328903195,
+      "elapsed_seconds": 7.7810000000172295,
+      "policies": 12,
+      "x1": 0.5000000000000034,
+      "x2": 0.1288139374726215,
+      "x3": 0.0,
+      "x4": 1.0,
+      "regret1": 1092.972132889392,
+      "regret2": 1783.1185037279174,
+      "regret3": 1073.710930248983,
+      "regret4": 2570.612525892756
+    }
+  ],
+  "source_sha256": "fd60a6b9751b2f1abcf4c22807b0c5ce5d1e8c64609f1632c2d463a87d511f04",
+  "external_checked_upper": 2673.726065413877
+}

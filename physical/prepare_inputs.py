@@ -1,4 +1,4 @@
-"""Rebuild the dispatch inputs from the raw MAT and spreadsheet files in physical/source/."""
+"""Rebuild the market-participation inputs from the raw MAT and spreadsheet files in physical/source/."""
 import argparse
 from pathlib import Path
 import hashlib
@@ -53,24 +53,6 @@ def workbook(path):
     return rows
 
 
-def references(path, count):
-    rows = workbook(path)[1:]
-    return {",".join(str(i + 1) for i, flag in enumerate(row[:count]) if flag): row[count]
-            for row in rows}
-
-
-def save_inputs(path, parameters):
-    """Match the released NPZ integer representation across NumPy versions."""
-    arrays = {name: np.asarray(value) for name, value in parameters.items()}
-    for name, values in arrays.items():
-        if np.issubdtype(values.dtype, np.integer):
-            encoded = values.astype("<i4")
-            if not np.array_equal(encoded, values):
-                raise ValueError(f"{name} exceeds the released 32-bit integer format")
-            arrays[name] = encoded
-    np.savez_compressed(path, **arrays)
-
-
 def main():
     output = parse_output()
     manifest = json.loads((SOURCE / "manifest.json").read_bytes())
@@ -80,14 +62,13 @@ def main():
             raise ValueError(f"Unexpected contents of {item['file']}")
     output.mkdir(exist_ok=True, parents=True)
     five_mat = SOURCE / "five" / "5DER_electricity.mat"
-    small_table = SOURCE / "five" / "5DER_coalition_values.xlsx"
     p = loadmat(five_mat, simplify_cells=True)["Parameter"]
     physical = {k: np.atleast_1d(p[k]) for k in
                 ("P", "Lmpda", "Lmprt", "pane", "ag", "bg", "cg", "Ug", "Dg", "Pgmin", "Pgmax",
                  "yt_sin", "yt_sout", "as", "socmin", "socmax", "p_cmax", "p_dmax", "Esmax", "Cutting")}
     physical.update(renewable=np.stack([p["Wind_f"], p["Solar_f"]]), dr_rt=p["Load_f"][None],
                     dr_da=p["Load_base"][None], counts=[2, 1, 1, 1])
-    save_inputs(output / "five.npz", physical)
+    np.savez_compressed(output / "five.npz", **physical)
     large = SOURCE / "twenty"
     extreme = large / "Data_Scenario_Large_Extreme.xlsx"
     historical = large / "Dataset_Large_Case_Used_50.xlsx"
@@ -112,12 +93,7 @@ def main():
                         p_cmax=[1.5,1.5,1.8], p_dmax=[1.5,1.5,1.8],
                         Cutting=[685,651.45,667.20,700.56,689.86,633.36])
     large_inputs["as"] = np.zeros(3)
-    save_inputs(output / "twenty.npz", large_inputs)
-    large_table = large / "Possible_Coalition_DER20_VPP4_2026_08_20_11_10_35_464.xlsx"
-    refs = {"five":references(small_table, 5), "twenty":references(large_table, 20)}
-    (output / "reference.json").write_text(json.dumps(refs, indent=1), encoding="utf-8")
-    source_hashes = {item["workspace_path"]: item["sha256"] for item in manifest}
-    (output / "source_sha256.json").write_text(json.dumps(source_hashes, indent=2), encoding="utf-8")
+    np.savez_compressed(output / "twenty.npz", **large_inputs)
 
 
 if __name__ == "__main__":

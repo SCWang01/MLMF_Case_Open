@@ -19,7 +19,7 @@ from scipy.io import loadmat
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "data" / "twenty_case.mat"
+SOURCE = ROOT.parent / "physical/twenty_end_to_end.mat"
 
 
 # Compute regularized simplex response probabilities using sorted offers and water levels.

@@ -119,9 +119,9 @@ def exact_audit(data,q):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--case",required=True,choices=("frozen","dispatch"))
+    parser.add_argument("--case",default="market",choices=("market",))
     args = parser.parse_args()
-    src = ROOT / ("large/data/twenty_case.mat" if args.case=="frozen" else "physical/twenty_end_to_end.mat")
+    src = ROOT / "physical/twenty_end_to_end.mat"
     game,_ = load_game(src)
     params = tuple(np.ascontiguousarray(v) for v in (game.f,game.c,game.base,game.contribution,game.compensation))+(game.epsilon,)
     data = read_game(src)

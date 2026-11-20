@@ -242,29 +242,3 @@ def generate(source,regions):
     return dict(sha256=hashlib.sha256(source.read_bytes()).hexdigest(),leaves=all_leaves)
 
 
-def main():
-    p=ArgumentParser(description=__doc__)
-    p.add_argument("--case",choices=["frozen","dispatch","both"],default="both")
-    p.add_argument("--generate",action="store_true")
-    args=p.parse_args()
-    regions=boxes()
-    for case in (["frozen","dispatch"] if args.case=="both" else [args.case]):
-        started=time.monotonic()
-        source=HERE.parent/("large/data/twenty_case.mat" if case=="frozen" else "physical/twenty_end_to_end.mat")
-        cert=HERE/f"certificate_{case}.json.gz"
-        if args.generate:
-            data=generate(source,regions)
-            cert.write_bytes(gzip.compress(json.dumps(data,separators=(",",":")).encode(),mtime=0))
-        data=json.loads(gzip.decompress(cert.read_bytes()))
-        minima=verify(source,regions,data)
-        bound=min(minima.values())
-        result=dict(input_sha256=data["sha256"],certificate_sha256=hashlib.sha256(cert.read_bytes()).hexdigest(),
-                    rational_target=str(TARGET),rational_lower=str(bound),lower=float(bound),boxes=len(regions),
-                    leaves=sum(len(group) for group in data["leaves"].values()),box_lower={k:float(v) for k,v in minima.items()})
-        (HERE/f"certificate_{case}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
-        print(case,result["leaves"],result["lower"],time.monotonic()-started,flush=True)
-
-
-if __name__=="__main__":
-    main()
-

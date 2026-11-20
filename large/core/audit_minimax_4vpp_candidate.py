@@ -1,11 +1,11 @@
-"""Audit one minimax candidate with exact rational arithmetic, independently of the optimizer.
+"""Audit one minimax candidate with exact rational arithmetic, without Gurobi.
 
 Every saved binary64 input is interpreted as its exact rational value. DER
 projection, original signed MATLAB profits and all unilateral maxima are then
 computed using Fraction. This certifies only the candidate's regret upper
 bound; it never certifies the solver's global minimax lower bound.
 
-Run: python -B large/core/audit_minimax_4vpp_candidate.py
+Run: python -B equilibrium_research/audit_minimax_4vpp_candidate.py
 """
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ from scipy.io import loadmat
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = ROOT / "data" / "twenty_case.mat"
+DEFAULT_SOURCE = ROOT.parent / "physical/twenty_end_to_end.mat"
 DEFAULT_CANDIDATE = ROOT / "runs" / "full_1.json"
 DEFAULT_OUTPUT = ROOT / "full_candidate_audit.json"
 ZERO = Fraction(0)

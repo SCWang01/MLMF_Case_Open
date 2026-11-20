@@ -394,25 +394,3 @@ def audit(game: Game) -> dict:
             "points": point_results, "segments": segment_results}
 
 
-def main():
-    here = Path(__file__).resolve().parent
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--case", default="all", help="baseline, near_zero_01 through near_zero_15, or all")
-    parser.add_argument("--output-dir", type=Path, default=here / "regenerated_certificates")
-    args = parser.parse_args()
-    cases = {"baseline": json.loads((here.parent / "small/inputs/baseline.json").read_bytes())["inputs"]}
-    cases.update({row["id"]: row["inputs"] for row in json.loads((here / "near_zero_cases.json").read_bytes())})
-    if args.case != "all" and args.case not in cases:
-        parser.error("Unknown case: " + args.case)
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    for name, record in cases.items():
-        if args.case not in ("all", name):
-            continue
-        result = audit(Game(record))
-        path = args.output_dir / (name + ".json")
-        path.write_text(json.dumps(result, indent=2), encoding="utf-8")
-        print(f"{name}: {result['isolated_candidate_count']} isolated candidates, {result['candidate_segment_count']} segments")
-
-
-if __name__ == "__main__":
-    main()

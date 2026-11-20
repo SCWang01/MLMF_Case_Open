@@ -1,0 +1,49 @@
+{
+  "key": {},
+  "decision": "approximate_equilibrium",
+  "stop": "approximate_equilibrium",
+  "trace": [
+    {
+      "round": 1,
+      "lower": 0.0,
+      "upper": 0.02106819737193799,
+      "candidate": [
+        0.6770342864361731,
+        0.6789322508922779
+      ],
+      "raw_bound": 0.0,
+      "rules": 4
+    },
+    {
+      "round": 2,
+      "lower": 0.0,
+      "upper": 0.0,
+      "candidate": [
+        0.899999993160931,
+        0.8999999931639625
+      ],
+      "raw_bound": 0.0,
+      "rules": 6
+    }
+  ],
+  "lower": 0.0,
+  "upper": 0.0,
+  "quote": [
+    0.899999993160931,
+    0.8999999931639625
+  ],
+  "checked_upper": 1.9505973849961634e-17,
+  "regrets": [
+    1.9505973849961634e-17,
+    1.945415435988716e-17
+  ],
+  "verified_exact_profiles": 0,
+  "model_size": {
+    "variables": 194,
+    "binary_variables": 78,
+    "linear_constraints": 123,
+    "quadratic_constraints": 4,
+    "general_constraints": 296
+  },
+  "elapsed_seconds": 0.1720000000204891
+}

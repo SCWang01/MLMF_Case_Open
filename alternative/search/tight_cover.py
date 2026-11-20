@@ -120,15 +120,15 @@ def verify(src,record,target):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--case",required=True,choices=("frozen","dispatch"))
+    parser.add_argument("--case",default="market",choices=("market",))
     parser.add_argument("--target",help="default uses the recorded four-decimal certificate threshold")
     parser.add_argument("--generate",action="store_true")
     parser.add_argument("--limit",type=int,default=150000)
     args=parser.parse_args()
     if args.target is None:
-        args.target = "98.40621" if args.case=="frozen" else "97.24961"
+        args.target = "97.24961"
     target=Fraction(args.target)
-    src=ROOT/("large/data/twenty_case.mat" if args.case=="frozen" else "physical/twenty_end_to_end.mat")
+    src=ROOT/"physical/twenty_end_to_end.mat"
     artifact=HERE/f"cover_{args.case}_{args.target}.json.gz"
     started=time.monotonic()
     if args.generate:

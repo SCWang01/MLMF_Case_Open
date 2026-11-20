@@ -139,7 +139,7 @@ def check_cover(row):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--case",choices=["frozen"],default="frozen")
+    p.add_argument("--case",choices=["both",*CASES],default="both")
     p.add_argument("--workers",type=int,default=8)
     p.add_argument("--nodes",type=int,default=81,help="maximum number of MILP masters per original box")
     p.add_argument("--seconds",type=float,default=3.,help="COPT limit per MILP master")
@@ -157,7 +157,7 @@ def main():
     for name,leaf in spec["boxes"].items():
         for case in cases:
             point=read(ROOT/("verification/candidate_"+case+".json"))["quote"]
-            target=98.4051 if case=="frozen" else 97.2451
+            target=97.2451
             previous=None
             if args.continue_from:
                 meta=read(args.continue_from/(case+".json"))

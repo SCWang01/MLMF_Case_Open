@@ -1,0 +1,3 @@
+{"key":{"family":"ages","masks":[13,18],"rules":["equal_dp","shapley"],"ages":[0,0,3,4,3]},"decision":"within","lower":0.0,"upper":1.3223106693681878e-13,"quote":[0.4316704243809089,0.0],"rounds":1,"presolve":0}
+{"key":{"family":"ages","masks":[13,18],"rules":["equal_dp","shapley"],"ages":[3,1,2,2,2]},"decision":"within","lower":0.0,"upper":3.3816260040706927e-11,"quote":[0.42527754746751356,0.0008795123522364048],"rounds":1,"presolve":0}
+{"key":{"family":"ages","masks":[13,18],"rules":["equal_dp","shapley"],"ages":[4,0,0,3,1]},"decision":"within","lower":0.0,"upper":1.272173030029109e-10,"quote":[0.4872990874021919,0.0],"rounds":2,"presolve":0}

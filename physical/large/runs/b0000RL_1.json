@@ -1,0 +1,357 @@
+{
+  "problem": "min_x max_i max_z [U_i(z,x_-i)-U_i(x)]",
+  "vpp_count": 4,
+  "der_count": 20,
+  "epsilon": 0.1,
+  "tau": 0.001,
+  "policy_mode": "capture",
+  "strategy_bounds": [
+    [
+      0.25,
+      0.5
+    ],
+    [
+      0.0,
+      0.25
+    ],
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      0.5
+    ]
+  ],
+  "threads": 2,
+  "verification_scope": "strategy_box",
+  "configuration": {
+    "seconds": 60,
+    "round_seconds": 30,
+    "max_rounds": 40,
+    "target_absolute_gap": 0.001,
+    "stop_on_verified": false,
+    "decision_margin": 1e-06,
+    "strategy_bounds": [
+      [
+        0.25,
+        0.5
+      ],
+      [
+        0.0,
+        0.25
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.5
+      ]
+    ],
+    "threads": 2,
+    "initial_policy_count": 0,
+    "presolve": 0
+  },
+  "stop_reason": "numerical_exclusion",
+  "decision": "numerical_exclusion",
+  "lower_bound": 466.4809047952058,
+  "raw_solver_lower_bound": 466.4809057952058,
+  "upper_bound": 466.480905798031,
+  "absolute_gap": 1.0028252290794626e-06,
+  "bounds_overlap_within_tolerance": false,
+  "exact_certificate": false,
+  "certificate_type": "floating_point_global_master_and_piecewise_br_bounds",
+  "elapsed_seconds": 14.327999999979511,
+  "best_candidate": {
+    "x": [
+      0.25,
+      0.23336316693396786,
+      0.0,
+      0.25444741673092663
+    ],
+    "profits": [
+      1970.9640024322453,
+      5609.164245784372,
+      1250.0,
+      3977.7928884582197
+    ],
+    "shares": [
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.9999999999995453,
+        4.547473508864641e-13,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "best_response_actions": [
+      0.10789465414583148,
+      0.23336316693396789,
+      0.0,
+      0.2895871856135803
+    ],
+    "best_response_profits": [
+      2437.4449082302763,
+      5609.164245784373,
+      1250.0,
+      4444.273794253001
+    ],
+    "regrets": [
+      466.480905798031,
+      9.094947017729282e-13,
+      0.0,
+      466.4809057947814
+    ],
+    "maximum_regret": 466.480905798031
+  },
+  "deviation_policies": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 12,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 2,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 2,
+        "offset": -1
+      }
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      {
+        "kind": "capture",
+        "der": 12,
+        "offset": -1
+      }
+    ]
+  ],
+  "model_size": {
+    "variables": 2405,
+    "binary_variables": 1068,
+    "linear_constraints": 1364,
+    "quadratic_constraints": 8,
+    "general_constraints": 4216
+  },
+  "history": [
+    {
+      "round": 1,
+      "master_status": 1,
+      "master_objective": 0.0,
+      "lower_bound": 0.0,
+      "raw_solver_lower_bound": 0.0,
+      "upper_bound": 860.1281508465313,
+      "absolute_gap": 860.1281508465313,
+      "elapsed_seconds": 0.25,
+      "policies": 8,
+      "x1": 0.25,
+      "x2": 0.25,
+      "x3": 0.022072668518904368,
+      "x4": 0.2405828779325595,
+      "regret1": 431.364974597584,
+      "regret2": 9.094947017729282e-13,
+      "regret3": 87.65846325392272,
+      "regret4": 860.1281508465313
+    },
+    {
+      "round": 2,
+      "master_status": 1,
+      "master_objective": 466.4809057952058,
+      "lower_bound": 466.4809047952058,
+      "raw_solver_lower_bound": 466.4809057952058,
+      "upper_bound": 466.480905798031,
+      "absolute_gap": 1.0028252290794626e-06,
+      "elapsed_seconds": 14.327999999979511,
+      "policies": 12,
+      "x1": 0.25,
+      "x2": 0.23336316693396786,
+      "x3": 0.0,
+      "x4": 0.25444741673092663,
+      "regret1": 466.480905798031,
+      "regret2": 9.094947017729282e-13,
+      "regret3": 0.0,
+      "regret4": 466.4809057947814
+    }
+  ],
+  "source_sha256": "fd60a6b9751b2f1abcf4c22807b0c5ce5d1e8c64609f1632c2d463a87d511f04",
+  "external_checked_upper": 472.1849949412815
+}

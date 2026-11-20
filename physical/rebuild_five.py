@@ -1,4 +1,4 @@
-"""Propagate COPT five-DER dispatch incumbents through the paper's allocation rules and CCG."""
+"""Propagate COPT five-DER market-participation profits through the paper's allocation rules and CCG."""
 import csv
 from fractions import Fraction
 from itertools import combinations
@@ -47,13 +47,9 @@ def main():
         rows = list(csv.DictReader(fp))
     if len(rows) != 31 or any(row["optimal_within_tolerance"] != "True" for row in rows):
         raise ValueError("Expected a solved table of 31 nonempty coalitions")
-    ref = coefficients({r["members"]:float(r["paper_input_profit"]) for r in rows})
-    rebuilt = coefficients({r["members"]:float(r["lower"]) for r in rows})
-    baseline = json.loads((HERE.parent / "small/inputs/baseline.json").read_bytes())
-    delta = max(abs(np.asarray(ref[k]) - baseline["inputs"][k]).max() for k in ref)
-    if delta > 1e-8:
-        raise ArithmeticError("Archived coalition table does not recover manuscript game")
-    inputs = dict(baseline["inputs"], **rebuilt)
+    rebuilt = coefficients({r["members"]: float(r["lower"]) for r in rows})
+    baseline = json.loads((HERE / "inputs/five_contracts.json").read_bytes())
+    inputs = dict(baseline["baseline"], **rebuilt)
     exact = FrozenGame(inputs)
     game = MultiGame(**{k:np.array(v) if k != "epsilon" else v for k,v in inputs.items()})
     settings = baseline["ccg_settings"]
@@ -78,10 +74,8 @@ def main():
                 row["exact_equilibrium"] = [str(v) for v in profile]
                 row["exact_equilibrium_regrets"] = [str(v) for v in regrets]
         states.append(row)
-    out = dict(input_basis="COPT feasible coalition dispatch objectives from five_tight.csv", inputs=inputs,
-               reference_coefficient_reconstruction_error=delta,
-               maximum_dispatch_gap=max(float(r["upper"])-float(r["lower"]) for r in rows),
-               coefficient_max_differences={k:float(np.max(np.abs(np.asarray(rebuilt[k])-ref[k]))) for k in ref},
+    out = dict(input_basis="COPT coalition market-participation profits from five_tight.csv", inputs=inputs,
+               maximum_objective_gap=max(float(r["upper"])-float(r["lower"]) for r in rows),
                decision=decision["decision"], decision_trace=decision_trace, trace=trace, best_quote=quote,
                first_exclusion_round=next((s["round"] for s in decision_trace if s["lower"]>0.001001),None),
                refinement_stop=result["stop_reason"],

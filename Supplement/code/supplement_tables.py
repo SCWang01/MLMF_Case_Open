@@ -1,6 +1,6 @@
 """SUPPLEMENT_TABLES Write the supplement's numeric LaTeX tables from the result JSON files.
 
-Run:  python Supplement/code/supplement_tables.py . (from the package root)
+Run:  python -E -P supplement_tables.py <paper folder>
 
 Writes <paper>/Supplement/tables/:
     dynamics.tex   - per-window expectations for both charge schedules

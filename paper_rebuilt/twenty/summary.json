@@ -1,0 +1,156 @@
+{
+  "source_sha256": "fd60a6b9751b2f1abcf4c22807b0c5ce5d1e8c64609f1632c2d463a87d511f04",
+  "exclusions": 12,
+  "subdomains": 23,
+  "full_domain_lower_bounds": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "full_domain_upper_bounds": [
+    16948.768281439683,
+    2948.2157324123564,
+    2143.216355983275,
+    470.75787245823904
+  ],
+  "minimum_lower": 97.24961129413921,
+  "minimum_upper": 97.24963761919423,
+  "copt_refinement_lower": 97.2496366018494,
+  "quote": [
+    0.031254581238218684,
+    0.19916696226321398,
+    0.0,
+    0.18779004247021674
+  ],
+  "regrets": [
+    97.24963761919423,
+    97.24963761665624,
+    0.0,
+    97.24963761917014
+  ],
+  "surplus": 26116.642708679778,
+  "rho_share_percent": 0.3723665354079897,
+  "best_common": {
+    "c": 0.35,
+    "max_regret": 1523.2327851071618,
+    "percent": 5.832421885531714
+  },
+  "common_multiple": 15.663120422841763,
+  "initial_contracts": [
+    {
+      "members": [
+        6,
+        7,
+        8,
+        20
+      ],
+      "periods": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "length": 2,
+      "factor": 550.0,
+      "allocation_method": 1
+    },
+    {
+      "members": [
+        1,
+        5,
+        12,
+        13,
+        14
+      ],
+      "periods": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "length": 3,
+      "factor": 300.0,
+      "allocation_method": 2
+    },
+    {
+      "members": [
+        4,
+        9,
+        15,
+        17,
+        18
+      ],
+      "periods": [
+        3,
+        1,
+        2,
+        1,
+        2
+      ],
+      "length": 4,
+      "factor": 250.0,
+      "allocation_method": 2
+    },
+    {
+      "members": [
+        2,
+        3,
+        10,
+        11,
+        16,
+        19
+      ],
+      "periods": [
+        3,
+        1,
+        4,
+        4,
+        4,
+        4
+      ],
+      "length": 5,
+      "factor": 600.0,
+      "allocation_method": 3
+    }
+  ],
+  "destinations": [
+    2,
+    4,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    2,
+    4,
+    2,
+    2,
+    4,
+    2
+  ],
+  "minimum_destination_probability": 1.0,
+  "switching_der_ids": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    20
+  ]
+}

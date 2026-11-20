@@ -189,13 +189,12 @@ def split(tri):
 
 
 def read_data(case):
-    baseline=json.loads((ROOT/"small/inputs/baseline.json").read_bytes())
-    if case=="frozen":
-        return baseline["inputs"],baseline["protected_states"]
-    rebuilt=json.loads((ROOT/"physical/five_end_to_end.json").read_bytes())["inputs"]
-    economic={k:rebuilt[k] for k in ("base","f","contribution")}
-    states=[{"expired":s["expired"],"inputs":dict(s["inputs"],**economic)} for s in baseline["protected_states"]]
-    return rebuilt,states
+    contract = json.loads((ROOT / "physical/inputs/five_contracts.json").read_bytes())
+    inputs = json.loads((ROOT / "physical/five_end_to_end.json").read_bytes())["inputs"]
+    economics = {k: inputs[k] for k in ("base", "f", "contribution")}
+    states = [{"expired": s["expired"], "inputs": dict(s["inputs"], **economics)}
+              for s in contract["protected_states"]]
+    return inputs, states
 
 
 class Search:
@@ -376,7 +375,7 @@ def controls(states):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--case",choices=["frozen","dispatch","both"],default="both")
+    parser.add_argument("--case",choices=["market"],default="market")
     parser.add_argument("--verify",action="store_true",help="replay certificates with rational arithmetic, without COPT")
     parser.add_argument("--tolerance",default="0.000000000001")
     parser.add_argument("--max-splits",type=int,default=20000)
@@ -384,7 +383,7 @@ def main():
     tolerance=F(args.tolerance)
     if tolerance<=0 or args.max_splits<1:
         raise ValueError("Positive tolerance and split budget required")
-    for case in (["frozen","dispatch"] if args.case=="both" else [args.case]):
+    for case in [args.case]:
         start=perf_counter()
         inputs,states=read_data(case)
         digest=hashlib.sha256(json.dumps(inputs,sort_keys=True,separators=(",",":")).encode()).hexdigest()

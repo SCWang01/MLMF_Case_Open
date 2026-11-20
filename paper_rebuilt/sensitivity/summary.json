@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "family": "expiry",
+      "total": 1280,
+      "within": 182,
+      "excluded": 1098,
+      "exact": 182,
+      "unresolved": 0
+    },
+    {
+      "family": "ages",
+      "total": 2000,
+      "within": 880,
+      "excluded": 1120,
+      "exact": 880,
+      "unresolved": 0
+    },
+    {
+      "family": "resim",
+      "total": 11008,
+      "within": 1647,
+      "excluded": 9361,
+      "exact": 1627,
+      "unresolved": 0
+    }
+  ],
+  "pv2": [
+    {
+      "period": 0,
+      "total": 500,
+      "exact": 500,
+      "unresolved": 0
+    },
+    {
+      "period": 1,
+      "total": 500,
+      "exact": 380,
+      "unresolved": 0
+    },
+    {
+      "period": 2,
+      "total": 500,
+      "exact": 0,
+      "unresolved": 0
+    },
+    {
+      "period": 3,
+      "total": 500,
+      "exact": 0,
+      "unresolved": 0
+    }
+  ],
+  "within": 2709,
+  "excluded": 11579,
+  "exact": 2689,
+  "maximum_near_zero_quote_regret": 6.815085984374454e-06,
+  "repaired": 3
+}

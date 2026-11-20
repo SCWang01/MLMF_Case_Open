@@ -58,26 +58,6 @@ def response(env, game, player, rival=F(1)):
                 exact_regret=float(exact - payoff(F(1))), intervals_solved=len(breaks)-1)
 
 
-def controls(baseline):
-    env = cp.Envr()
-    witnesses = json.loads((HERE / "inputs" / "expiry_witnesses.json").read_bytes())
-    rows = []
-    for state in baseline["protected_states"]:
-        game = FrozenGame(state["inputs"])
-        responses = [response(env, game, i) for i in range(2)]
-        gains = [item["regret"] for item in responses]
-        mask = {"None":"0", "ESS":"8", "All":"31"}[state["expired"]]
-        checked = []
-        for quote in witnesses.get(mask, []):
-            regrets = full_regrets(game, tuple(map(F, quote)))
-            if max(regrets) != 0:
-                raise ArithmeticError("Invalid archived exact equilibrium witness")
-            checked.append(dict(quote=quote, regrets=list(map(float, regrets))))
-        rows.append(dict(expired=state["expired"], regrets=gains, responses=responses,
-                         exact_equilibria_checked=checked))
-    return rows
-
-
 def audit_trace(raw, game, use_midpoint):
     rows = []
     best_quote = None
@@ -98,29 +78,4 @@ def audit_trace(raw, game, use_midpoint):
                          regrets=regrets, raw_lower=step["raw_solver_lower_bound"], policy_count=step["policies"]))
     return rows, best_quote
 
-
-def main():
-    baseline = json.loads((HERE / "inputs" / "baseline.json").read_bytes())
-    protected = controls(baseline)
-    inputs = baseline["inputs"]
-    data = {k: np.asarray(v) for k,v in inputs.items() if k != "epsilon"}
-    game = MultiGame(**data, epsilon=inputs["epsilon"])
-    exact = FrozenGame(inputs)
-    settings = baseline["ccg_settings"]
-    decision_settings = {**settings, "tau": 0.001, "decision_margin": 1e-6}
-    decision = solve_minimax(game, **decision_settings)
-    decision_trace, _ = audit_trace(decision, exact, False)
-    refinement = solve_minimax(game, **settings)
-    trace, quote = audit_trace(refinement, exact, True)
-    out = dict(protected_states=protected, trace=trace,
-               settings=settings, decision_settings=decision_settings, decision_trace=decision_trace,
-               decision=decision["decision"], best_quote=quote,
-               exact_audited_regrets=list(map(float, full_regrets(exact, tuple(map(F, quote))))),
-               first_exclusion_round=next((s["round"] for s in decision_trace if s["lower"] > 0.001001),None),
-               refinement_gap=trace[-1]["upper"] - trace[-1]["lower"], refinement_stop=refinement["stop_reason"])
-    (HERE / "results.json").write_text(json.dumps(out, indent=2, allow_nan=False) + "\n", encoding="utf-8")
-
-
-if __name__ == "__main__":
-    main()
 

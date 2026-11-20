@@ -1,4 +1,4 @@
-"""Rebuild frozen game coefficients from the fixed coalition table."""
+"""Build contract-game coefficients from COPT coalition market-participation profits."""
 import json
 import math
 from itertools import combinations

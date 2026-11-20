@@ -6,15 +6,15 @@ below are final):
 
     case_five_ccg.pdf    - Fig. 3: (a) five-DER gains at full retention by expired
                            contracts, (b) CCG lower and upper regret bounds by round
-    case_twenty_ccg.pdf  - Fig. 4: (a) full-domain upper bound by round (log),
-                           (b) global lower bounds against the exclusion threshold
+    case_twenty_ccg.pdf  - Fig. 4: global lower and upper regret bounds throughout refinement
     case_baseline.pdf    - Fig. 5: (a) maximum regret of common posted ratios vs the CCG
                            minimum in both markets, (b) five-DER profits by posting
     case_sensitivity.pdf - Fig. 6: (a) outcome shares by configuration family,
                            (b) states with a verified pure NSE by PV2's remaining term
 
-The manuscript uses Times New Roman. Set --font to select another installed family.
-All plotted numbers come from the two data files without filtering or rescaling.
+Invariant: every glyph is Times New Roman (the script stops if the font is missing,
+instead of silently substituting another serif), and every plotted number comes
+from the two data files without filtering or rescaling.
 
 Maintenance: change the look only in "Define style"; change what a figure shows
 only in its draw function. Do not edit figure_data.json by hand -- the upstream
@@ -24,8 +24,7 @@ baseline_data.json with baseline_data.py.
 
 import argparse
 import json
-import os
-from fractions import Fraction
+from math import isfinite
 from pathlib import Path
 
 import matplotlib
@@ -70,7 +69,7 @@ BUNDLE_DPI    = 600          # TIFF copies for submission systems (--bundle only
 # Output file and height of each figure; the data key is the figure_data.json key.
 FIGURE_SPECS = {
     "five":        {"file": "case_five_ccg.pdf",    "height_in": 2.90},
-    "twenty":      {"file": "case_twenty_ccg.pdf",  "height_in": 2.85},
+    "twenty":      {"file": "case_twenty_ccg.pdf",  "height_in": 1.45},
     "baseline":    {"file": "case_baseline.pdf",    "height_in": 3.30},
     "sensitivity": {"file": "case_sensitivity.pdf", "height_in": 3.00},
 }
@@ -118,13 +117,13 @@ def require(condition, error_id, message):
         raise FigureDataError(f"{error_id}: {message}")
 
 
-def require_font(family):
+def require_font():
     try:
-        font_manager.findfont(font_manager.FontProperties(family=family),
+        font_manager.findfont(font_manager.FontProperties(family=FONT),
                               fallback_to_default=False)
     except ValueError as exc:
-        raise FigureDataError(f"Matplotlib could not find {family!r}. Install it or use "
-                              f"--font \"DejaVu Serif\".") from exc
+        raise FigureDataError(f"render_case_figures:MissingFont: '{FONT}' is not installed "
+                              f"for matplotlib; install it rather than substituting.") from exc
 
 
 def require_rounds(rows, first, error_id):
@@ -150,23 +149,21 @@ def validate_five(data):
 
 
 def validate_twenty(data):
-    require_rounds(data["full_domain"], 1, "twenty_der:BadFullRounds")
-    for row in data["full_domain"]:
-        require(row["upper"] > 0, "twenty_der:NonPositiveUpper",
-                f"round {row['round']} upper bound {row['upper']} cannot go on a log axis")
-    require_rounds(data["cover"], 1, "twenty_der:BadLocalRounds")
-    total = data["total_boxes"]
-    for row in data["cover"]:
-        require(0 <= row["excluded"] <= total, "twenty_der:BadExcluded",
-                f"round {row['round']} excludes {row['excluded']} of {total} subdomains")
-    require(total - data["cover"][-1]["excluded"] == data["unresolved_boxes"],
-            "twenty_der:UnresolvedMismatch",
-            f"{total} - {data['cover'][-1]['excluded']} != unresolved {data['unresolved_boxes']}")
-    bounds = data["global_bounds"]
-    threshold = bounds["decision_threshold"]
-    for name in ("copt_refinement", "integer_certificate"):
-        require(float(Fraction(str(bounds[name]))) > threshold > 0, "twenty_der:BoundBelowThreshold",
-                f"{name} = {bounds[name]} must exceed the positive threshold {threshold}")
+    rows = data["trace"]
+    require([row["iteration"] for row in rows] == list(range(1, len(rows) + 1)),
+            "twenty_der:BadIterations", "global iterations must be consecutive from one")
+    full = [row for row in rows if row["stage"] == "full_domain"]
+    refined = [row for row in rows if row["stage"] == "refinement"]
+    require(full and refined and rows == full + refined, "twenty_der:BadStages",
+            "the full-domain run must precede the partition refinement")
+    require_rounds(full, 1, "twenty_der:BadFullRounds")
+    require_rounds(refined, 0, "twenty_der:BadRefinementRounds")
+    previous_lower, previous_upper = 0.0, float("inf")
+    for row in rows:
+        lower, upper = row["lower"], row["upper"]
+        require(isfinite(upper) and previous_lower <= lower <= upper <= previous_upper,
+                "twenty_der:BadBounds", f"iteration {row['iteration']} has inconsistent bounds")
+        previous_lower, previous_upper = lower, upper
 
 
 def validate_sensitivity(data):
@@ -288,42 +285,33 @@ def five_der(data):
 def twenty_der(data):
     validate_twenty(data)
     fig = new_figure("twenty")
-    ax_a, ax_b = fig.subplots(2, 1, height_ratios=(1.0, 0.8))
-
-    # (a) Full-domain upper bound on a log axis.
-    rows = data["full_domain"]
-    rounds = [r["round"] for r in rows]
+    ax = fig.subplots()
+    rows = data["trace"]
+    rounds = [r["iteration"] for r in rows]
+    lower = [r["lower"] for r in rows]
     upper = [r["upper"] for r in rows]
-    ax_a.plot(rounds, upper, color=BLUE, marker="o", zorder=3)
-    note(ax_a, f"{upper[0]:,.2f}", (rounds[0], upper[0]), (-2, 5), ha="left", va="bottom")
-    note(ax_a, f"{upper[-1]:.2f}", (rounds[-1], upper[-1]), (-2, 6), ha="right", va="bottom")
-    ax_a.set(yscale="log", ylim=(50, 1.2e5), yticks=(1e2, 1e3, 1e4), xticks=rounds,
-             xlim=(rounds[0] - 0.4, rounds[-1] + 0.4), ylabel=f"Upper bound\n({CURRENCY_SYMBOL}/period)")
-    ax_a.yaxis.set_minor_locator(NullLocator())
-    finish_axes(ax_a, "Full-domain CCG round", "a")
-
-    # (b) Dumbbells from the threshold to each global lower bound (log axis). The local
-    # subdomain counts (10 of 23 excluded) are stated in the text instead of a panel.
-    bounds = data["global_bounds"]
-    threshold = bounds["decision_threshold"]
-    rows_c = ({"name": "COPT refinement", "value": bounds["copt_refinement"],
-               "color": VERMILLION, "marker": "s", "y": 1.0},
-              {"name": "Integer certificate", "value": float(Fraction(bounds["integer_certificate"])),
-               "color": BLUE, "marker": "D", "y": 0.0})
-    ax_b.axvline(threshold, color=INK, lw=LW_GUIDE, ls=(0, (3, 2)), zorder=1)
-    for row in rows_c:
-        ax_b.hlines(row["y"], threshold, row["value"], colors=row["color"], lw=LW_DATA, zorder=2)
-        ax_b.plot(row["value"], row["y"], marker=row["marker"], color=row["color"], ls="",
-                  markersize=MARKER_SIZE + 1, zorder=3)
-        note(ax_b, row["name"], (threshold * 1.35, row["y"]), (0, 3.5), ha="left", va="bottom")
-        note(ax_b, f"{row['value']:.2f}", (row["value"], row["y"]), (6, 0), ha="left",
-             va="center", color=row["color"])
-    note(ax_b, f"Threshold {threshold:g}", (threshold * 1.35, -0.42), (0, 0), ha="left",
-         va="center")
-    ax_b.set(xscale="log", xlim=(4e-4, 1.2e3), xticks=(1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2),
-             ylim=(-0.75, 1.7), yticks=())
-    ax_b.xaxis.set_minor_locator(NullLocator())
-    finish_axes(ax_b, f"Global lower bound ({CURRENCY_SYMBOL}/period)", "b", ygrid=False)
+    first_refinement = next(r["iteration"] for r in rows if r["stage"] == "refinement")
+    ax.plot(rounds, upper, color=VERMILLION, marker="s", markerfacecolor="white",
+            markersize=3.7, markeredgewidth=0.9, lw=1.4, label="Upper bound", zorder=3)
+    ax.plot(rounds, lower, color=BLUE, ls=(0, (4, 2)), marker="o", markersize=2.9,
+            markeredgewidth=0.6, lw=1.35, label="Lower bound", zorder=4)
+    ax.axvline(first_refinement - 0.5, ymax=0.82, color=INK, lw=LW_GUIDE, ls=(0, (3, 2)),
+               label="Start of refinement", zorder=1)
+    note(ax, f"{upper[0]:,.2f}", (rounds[0], upper[0]), (4, -1), ha="left", va="center")
+    if f"{lower[-1]:.2f}" == f"{upper[-1]:.2f}":
+        note(ax, f"{upper[-1]:.2f}", (rounds[-1], upper[-1]), (-1, 6), ha="right", va="bottom")
+    # Keep zero and the rise of the global lower bound visible next to the
+    # four orders of magnitude spanned by the complete trace.
+    ax.set_yscale("symlog", linthresh=100, linscale=2.2)
+    ticks = (0, 50, 100, 1000, 10000)
+    ax.set_yticks(ticks, [f"{value:,}" for value in ticks])
+    ax.yaxis.set_minor_locator(NullLocator())
+    tick_rounds = sorted({1, first_refinement - 1, *range(10, rounds[-1], 5), rounds[-1]})
+    ax.set(xticks=tick_rounds, xlim=(rounds[0] - 0.45, rounds[-1] + 0.55),
+           ylim=(-7, 35000), xlabel="Global iteration", ylabel=f"Regret ({CURRENCY_SYMBOL}/period)")
+    ax.grid(axis="y")
+    frame_legend(ax.legend(loc="upper right", ncol=2, columnspacing=0.8, handlelength=1.3,
+                           handletextpad=0.3, borderpad=0.2, labelspacing=0.12))
     return fig
 
 
@@ -444,14 +432,10 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=HERE.parent / "Figs")
     parser.add_argument("--bundle", type=Path, default=None,
                         help="also write SVG and TIFF copies here (the manuscript uses the PDFs)")
-    parser.add_argument("--font", default=os.environ.get("MLMF_FIGURE_FONT", FONT),
-                        help="font family for labels and equations (default: manuscript font)")
     args = parser.parse_args()
 
-    require_font(args.font)
+    require_font()
     plt.rcParams.update(STYLE)
-    plt.rcParams.update({"font.family": args.font, "mathtext.rm": args.font,
-                         "mathtext.it": f"{args.font}:italic", "mathtext.bf": f"{args.font}:bold"})
     data = json.loads(args.data.read_text(encoding="utf-8"))
     base = json.loads(args.baseline_data.read_text(encoding="utf-8"))
     args.output_dir.mkdir(exist_ok=True, parents=True)

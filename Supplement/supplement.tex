@@ -19,14 +19,14 @@
 \begin{document}
 \maketitle
 \vspace{-1.5em}
-\noindent Equation, proposition, table, and figure numbers without the prefix ``S'' refer to the main text. The companion archive provides the data, code and independent equilibrium checks. The case studies report monetary amounts in \CurrencyName{} (\CurrencyCode{}, \CurrencySymbol{}).
+\noindent Equation, proposition, table, and figure numbers without the prefix ``S'' refer to the main text. The \href{https://github.com/SCWang01/MLMF_Case_Open}{\texttt{MLMF\_Case\_Open}} repository provides the Python code, baseline market inputs and independent equilibrium checks. The case studies report monetary amounts in \CurrencyName{} (\CurrencyCode{}, \CurrencySymbol{}).
 
 \section{Physical Recruitment Mechanism}\label{sec:physical}
 The two virtual power plants (VPPs), A and B, use Shapley allocation. Each fixed reference portfolio contains five distributed energy resources (DERs), comprising two renewable units (PV1 and PV2), a thermal generator (TG), an energy storage system (ESS), and a demand response (DR) unit. PV1 and PV2 are the manuscript labels for the wind and solar input series, respectively. B retains its full ESS capability. In portfolio A, ESS power takes the values $\beta=0.25,0.50,0.75,1.00$ times 1.50~MW. Energy capacity stays at 2~MWh, efficiency is fixed, and initial and final state of charge are both 0.50. The stand-alone value is recomputed at each power level. Each recruitment test adds a prospective copy of PV2 or of the ESS with the same parameters and input profiles as the original unit.
 
-Increasing the storage power available to A raises the allocated increment $F$ of the prospective PV2 unit from $449.87$ to $511.67$, while its marginal contribution $s$ changes from $560.93$ to $562.44$. For the prospective ESS, $F$ falls from $1603.14$ to $1536.14$ and $s$ from $2034.13$ to $1995.23$ (Fig.~\ref{fig:physical}(a)). With B offering $x_{\mathrm B}=0.50$ and $\epsilon=0.10$, the highest ratio at which A attracts target DER~$e$ with probability one is $1-(0.50F_{e\mathrm B}+\epsilon)/F_{e\mathrm A}$ (Fig.~\ref{fig:physical}(b)).
+The effect of A's existing ESS power rating on each prospective DER's allocated increment $F$ and marginal contribution $s$ is shown in Figure~\ref{fig:physical}(a). From Figure~\ref{fig:physical}(a), the PV2 curves show that increasing the available storage power raises $F$ from $449.87$ to $511.67$, while $s$ changes from $560.93$ to $562.44$. For the prospective ESS, $F$ falls from $1603.14$ to $1536.14$ and $s$ from $2034.13$ to $1995.23$.
 
-At one-quarter ESS power, the largest ratios at which A secures PV2 and the additional ESS are approximately $0.43$ and $0.52$, respectively. A ratio of $0.50$ therefore attracts the prospective ESS with certainty, while A must offer PV2 a larger share of the increment to secure it. Increasing the power rating of A's current ESS raises the ratio A can quote to PV2 and lowers the one it can quote to the additional ESS. This comparison holds the background portfolios fixed and isolates the effect of storage power on offers. Copies of the same type use identical input profiles, and the market participation model omits network constraints, degradation, and demand rebound.
+With B offering $x_{\mathrm B}=0.50$ and $\epsilon=0.10$, the highest ratio at which A attracts target DER~$e$ with probability one is $1-(0.50F_{e\mathrm B}+\epsilon)/F_{e\mathrm A}$. These thresholds are shown in Figure~\ref{fig:physical}(b). From Figure~\ref{fig:physical}(b), the thresholds at one-quarter ESS power show that A can secure PV2 at ratios up to approximately $0.43$ and the additional ESS at ratios up to approximately $0.52$. A ratio of $0.50$ therefore attracts the prospective ESS with certainty, while A must offer PV2 a larger share of the increment to secure it. Increasing the power rating of A's current ESS raises the ratio A can quote to PV2 and lowers the one it can quote to the additional ESS. This comparison holds the background portfolios fixed and isolates the effect of storage power on offers. Copies of the same type use identical input profiles, and the market participation model omits network constraints, degradation, and demand rebound.
 
 \begin{figure}[h]
 \centering
@@ -39,7 +39,7 @@ At one-quarter ESS power, the largest ratios at which A secures PV2 and the addi
 The positive control has $F_{dv}=1$, $s_{dv}=0.20$, $A_v=1$, zero switching costs, and $\epsilon=0.30$. Against a rival ratio of $0.90$, the payoff of each virtual power plant operator (VPPO) is $2z$ for $0\le z\le0.60$ and $3z-5z^2/3$ for $0.60\le z\le1$. Both best responses are therefore $0.90$. From $(0.50,0.50)$, Algorithm~1 finds an approximate equilibrium at tolerance $\eta=2\times10^{-5}$. The ratios round to $(0.90,0.90)$, and an independent check gives maximum regret $1.95\times10^{-17}$ at the unrounded ratios.
 
 \section{Twenty-DER Contracts}\label{sec:twenty}
-Table~\ref{tab:twenty} lists the current members of each VPP and their remaining contract periods, drawn uniformly from $1,\ldots,L_v-1$. The independently refined quote rounds to $(0.03,0.20,0.00,0.19)$. At the unrounded quote, \SnMovers{} of the 20 DERs change VPP: all members of VPPs~1 and~3, DERs 12--14 of VPP~2, and DER~3 of VPP~4. VPP~2 gains ten of them, and DERs~12--14 join VPP~4. Every DER chooses its destination with probability one.
+The current members of each VPP and their remaining contract periods are shown in Table~\ref{tab:twenty}. Each remaining term is drawn uniformly from $1,\ldots,L_v-1$. From Table~\ref{tab:twenty}, the last column shows that all four members of VPP~1 have one period left on their contracts. The independently refined quote rounds to $(0.03,0.20,0.00,0.19)$. At the unrounded quote, \SnMovers{} of the 20 DERs change VPP: all members of VPPs~1 and~3, DERs 12--14 of VPP~2, and DER~3 of VPP~4. VPP~2 gains ten of them, and DERs~12--14 join VPP~4. Every DER chooses its destination with probability one.
 
 \begin{table}[h]
 \centering
@@ -58,7 +58,7 @@ VPP & Member indices $d$ & Remaining periods $r_d$\\
 \end{table}
 
 \section{Near-Zero Sensitivity Cases}\label{sec:nearzero}
-Among the 2709 sensitivity configurations with a COPT quote within tolerance, 2694 also have a separately verified pure equilibrium with exactly zero regret. In the other 15 configurations, the COPT quotes have maximum regret at most $8.47\times10^{-7}$. An exhaustive test of the two-VPPO game excludes an exact pure equilibrium in each of these 15 configurations. Every candidate point and every profile on a candidate segment admits a profitable unilateral deviation.
+Among the 2709 sensitivity configurations with a COPT quote within tolerance, 2689 also have a separately verified pure equilibrium with exactly zero regret. In the remaining 20 configurations, the COPT quotes have maximum regret at most $6.82\times10^{-6}$. An exhaustive test of the two-VPPO game excludes an exact pure equilibrium in each of those configurations. Every candidate point and every profile on a candidate segment admits a profitable unilateral deviation.
 
 \section{Best-Response Iteration in the Five-DER Case}\label{sec:gs}
 Starting from $(0.50,0.50)$ in the five-DER baseline, the Gauss--Seidel best-response sequence did not converge over the observed trajectory. Its smallest maximum regret was $\SgsMin$ at a profile that rounds to $(\SgsXa,\SgsXb)$. The final profile had maximum regret $\SgsFinal$.
@@ -68,7 +68,7 @@ The five-DER market starts from the five-DER baseline state in the main text wit
 
 At each window, the VPPOs use Algorithm~1 to select their posted ratios by minimizing maximum regret for the current contract state. The posted ratios meet the acceptance threshold when their verified maximum regret satisfies $\rho\le\eta-\delta$, with $\eta=10^{-3}$ and $\delta=10^{-6}$, both in \CurrencySymbol{} per contract period. Each DER then chooses a VPP independently according to the probabilities in equation~(17). The expectations include every affiliation outcome with positive probability. A member who switches or whose contract has expired starts a new contract of its VPP's length. Other members' terms fall by one. In the realized coalition, VPPO~$v$ receives $x_v I_{\mathcal S_v'}$ plus the payments it receives from members leaving early, and DER~$d$ receives $(1-x_v)$ times its allocated increment in the realized coalition, minus $C_d$ if it leaves early. A VPP with a single member offers that member a zero increment, and an empty VPP offers zero to all DERs.
 
-Table~\ref{tab:dynamics} reports the expectations per window. In the more probable branch under time-variant switching costs, the ESS stays with VPP~1 in window~1, PV2 joins VPP~1 in window~2, and the DR unit follows in window~5. VPP~2 is then empty and VPPO~1 retains at least $99.95\%$ of its coalition surplus. In the other branch, the ESS joins VPP~2 and the posted quote exceeds the regret threshold in every window.
+The expected outcomes under both switching-cost schedules are shown in Table~\ref{tab:dynamics} for each window. From Table~\ref{tab:dynamics}, the last column shows that the probability of an empty VPP rises from zero in window~5 to $0.81$ in window~6 under time-variant switching costs. In the more probable branch under this schedule, the ESS stays with VPP~1 in window~1, PV2 joins VPP~1 in window~2, and the DR unit follows in window~5. VPP~2 is then empty and VPPO~1 retains at least $99.95\%$ of its coalition surplus. In the other branch, the ESS joins VPP~2 and the posted quote exceeds the regret threshold in every window.
 
 \begin{table}[h]
 \centering
@@ -79,7 +79,9 @@ Table~\ref{tab:dynamics} reports the expectations per window. In the more probab
 \end{table}
 
 \section{Common Ratios and Large Response Parameters}\label{sec:grids}
-Table~\ref{tab:grids} gives the maximum regret of every common ratio $x_v=c$ on a $0.05$ grid, with each VPPO deviating over $[0,1]$. The best grid point has regret $433.20$ at $c=0.60$ for five DERs and $1519.12$ at $c=0.35$ for twenty DERs. The corresponding regrets at the refined five- and twenty-DER profiles are $160.84$ and $98.41$, respectively. Table~\ref{tab:epsilon} gives the five-DER baseline results at $\epsilon=100$ and $1000$. At $\epsilon=1000$, an exact rational witness gives zero regret.
+The maximum regret at each common ratio $x_v=c$ on a $0.05$ grid is shown in Table~\ref{tab:grids}, with each VPPO free to deviate over $[0,1]$. From Table~\ref{tab:grids}, the two regret columns show that the best grid point has regret $433.05$ at $c=0.60$ for five DERs and $1523.23$ at $c=0.35$ for twenty DERs. The corresponding regrets at the refined five- and twenty-DER profiles are $160.84$ and $97.25$, respectively.
+
+The five-DER baseline results at $\epsilon=100$ and $1000$ are shown in Table~\ref{tab:epsilon}. From Table~\ref{tab:epsilon}, the decision column shows that the equilibrium test excludes a pure equilibrium at $\epsilon=100$ and accepts a quote within tolerance at $\epsilon=1000$. At $\epsilon=1000$, an exact rational witness gives zero regret.
 
 \begin{table}[h]
 \centering

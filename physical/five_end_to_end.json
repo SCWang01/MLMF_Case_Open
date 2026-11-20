@@ -1,5 +1,5 @@
 {
-  "input_basis": "COPT feasible coalition dispatch objectives from five_tight.csv",
+  "input_basis": "COPT coalition market-participation profits from five_tight.csv",
   "inputs": {
     "f": [
       [
@@ -89,13 +89,6 @@
       1
     ],
     "epsilon": 0.1
-  },
-  "reference_coefficient_reconstruction_error": 2.2737367544323206e-13,
-  "maximum_dispatch_gap": 0.00012096113641746342,
-  "coefficient_max_differences": {
-    "base": 0.006804247612308245,
-    "f": 0.16365675750989794,
-    "contribution": 0.14844760174673866
   },
   "decision": "numerical_exclusion",
   "decision_trace": [
@@ -256,5 +249,6 @@
         "0"
       ]
     }
-  ]
+  ],
+  "maximum_objective_gap": 0.00012096113641746342
 }

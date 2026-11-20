@@ -1,0 +1,207 @@
+{
+  "trace": [
+    {
+      "iteration": 1,
+      "stage": "full_domain",
+      "round": 1,
+      "lower": 0.0,
+      "upper": 16948.768281439683
+    },
+    {
+      "iteration": 2,
+      "stage": "full_domain",
+      "round": 2,
+      "lower": 0.0,
+      "upper": 2948.2157324123564
+    },
+    {
+      "iteration": 3,
+      "stage": "full_domain",
+      "round": 3,
+      "lower": 0.0,
+      "upper": 2143.216355983275
+    },
+    {
+      "iteration": 4,
+      "stage": "full_domain",
+      "round": 4,
+      "lower": 0.0,
+      "upper": 470.75787245823904
+    },
+    {
+      "iteration": 5,
+      "stage": "refinement",
+      "round": 0,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 6,
+      "stage": "refinement",
+      "round": 1,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 7,
+      "stage": "refinement",
+      "round": 2,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 8,
+      "stage": "refinement",
+      "round": 3,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 9,
+      "stage": "refinement",
+      "round": 4,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 10,
+      "stage": "refinement",
+      "round": 5,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 11,
+      "stage": "refinement",
+      "round": 6,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 12,
+      "stage": "refinement",
+      "round": 7,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 13,
+      "stage": "refinement",
+      "round": 8,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 14,
+      "stage": "refinement",
+      "round": 9,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 15,
+      "stage": "refinement",
+      "round": 10,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 16,
+      "stage": "refinement",
+      "round": 11,
+      "lower": 0.0,
+      "upper": 97.24965918985606
+    },
+    {
+      "iteration": 17,
+      "stage": "refinement",
+      "round": 12,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 18,
+      "stage": "refinement",
+      "round": 13,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 19,
+      "stage": "refinement",
+      "round": 14,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 20,
+      "stage": "refinement",
+      "round": 15,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 21,
+      "stage": "refinement",
+      "round": 16,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 22,
+      "stage": "refinement",
+      "round": 17,
+      "lower": 0.0,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 23,
+      "stage": "refinement",
+      "round": 18,
+      "lower": 2.829333488768061,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 24,
+      "stage": "refinement",
+      "round": 19,
+      "lower": 7.2646812899955835,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 25,
+      "stage": "refinement",
+      "round": 20,
+      "lower": 13.13166440414949,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 26,
+      "stage": "refinement",
+      "round": 21,
+      "lower": 17.693964519856493,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 27,
+      "stage": "refinement",
+      "round": 22,
+      "lower": 49.84961911019625,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 28,
+      "stage": "refinement",
+      "round": 23,
+      "lower": 59.180927096553106,
+      "upper": 97.24963770447299
+    },
+    {
+      "iteration": 29,
+      "stage": "refinement",
+      "round": 24,
+      "lower": 97.2496366018494,
+      "upper": 97.24963770447299
+    }
+  ]
+}

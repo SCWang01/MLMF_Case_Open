@@ -1,6 +1,6 @@
 """DYNAMICS Simulate the five-DER market over successive switching windows.
 
-Run:  python Supplement/code/dynamics.py Supplement/results/dynamics.json (from the package root)
+Run:  python -E -P dynamics.py <output json>
 
 At every window each VPPO posts the minimax-regret quote of the COPT
 rule-enhanced CCG with its refinement settings. A posted quote counts as an
@@ -48,7 +48,7 @@ SCHEDULES = {"time_varying": lambda owner, r: GAMMA[owner] * r,
 WINDOWS   = 10
 PRUNE     = 1e-4                           # drop scenario paths below this probability
 SHARE_TOL = 1e-9                           # a choice probability below this is zero
-ETA       = 1e-3                           # Algorithm 1 tolerance (m.u. per period)
+ETA       = 1e-3                           # Algorithm 1 payoff tolerance per period
 DELTA     = 1e-6
 SOLVER    = {"seconds": 300.0, "round_seconds": 30.0, "max_rounds": 200, "threads": 2,
              "absolute_gap": 1e-3, "tau": 0.0, "stop_on_verified": False,
@@ -79,7 +79,7 @@ ref = json.loads((HERE / "inputs" / "five_baseline.json").read_bytes())["inputs"
 F0, s0, A0 = mf.coefficients((13,18), RULES)
 REBUILD_GAP = max(np.max(abs(F0 - ref["f"])), np.max(abs(s0.T - ref["contribution"])), np.max(abs(A0 - ref["base"])))
 if REBUILD_GAP > 1e-8:
-    raise ValueError("Rebuilt baseline differs from the frozen game")                # coefficients reproduce the saved paper game
+    raise ValueError("Coalition profits do not reproduce the baseline market-participation coefficients")
 
 
 # ---------- Derive: one window -----------------------------------------------------
@@ -201,7 +201,8 @@ result = {"schedules": {name: simulate(name) for name in SCHEDULES},
                          "numpy": np.__version__, "python": platform.python_version(),
                          "processor": platform.processor(), "wall_seconds": time.perf_counter() - start,
                          "sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-                                    for p in [FAMILY / "market_family.py", *sorted((HERE / "patched").glob("*.py")),
+                                    for p in [FAMILY / "market_family.py", HERE / "inputs/five_coalitions.json",
+                                              HERE / "inputs/five_baseline.json", *sorted((HERE / "patched").glob("*.py")),
                                               Path(__file__).resolve()]}}}
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 OUTPUT.write_text(json.dumps(result, indent=1, allow_nan=False), encoding="utf-8")

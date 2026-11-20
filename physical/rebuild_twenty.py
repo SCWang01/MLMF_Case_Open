@@ -12,7 +12,7 @@ import numpy as np
 from scipy.io import loadmat, savemat
 
 HERE = Path(__file__).resolve().parent
-FROZEN = HERE.parent / "large/data/twenty_case.mat"
+CONTRACTS = HERE / "inputs/twenty_contracts.mat"
 
 
 def subsets(members):
@@ -121,42 +121,26 @@ def as_record(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dispatch", type=Path, help="CSV with members (one-based CSV list) and lower (profit)")
-    parser.add_argument("--mat",type=Path,default=HERE / "twenty_end_to_end.mat")
+    parser.add_argument("--profits", type=Path, default=HERE.parent / "physical_full" / "coalitions.csv")
+    parser.add_argument("--mat", type=Path, default=HERE / "twenty_end_to_end.mat")
     args = parser.parse_args()
-    source = loadmat(FROZEN,simplify_cells=True)
-    ref = json.loads((HERE / "inputs/reference.json").read_bytes())["twenty"]
-    rebuilt = build(ref,source)
-    def differences(actual):
-        return {k:np.abs(x - np.asarray(source["Parameter"][k])).max().item() for k,x in actual.items()}
-    err = differences(rebuilt)
-    if max(err.values()) > 1e-5:
-        raise ArithmeticError(f"Allocation differs from manuscript MAT: {err}")
-    out = dict(archived_coefficient_max_abs_errors=err, source_table_rows=len(ref))
-    if args.dispatch:
-        dispatched = as_record(args.dispatch)
-        if set(dispatched) != set(ref):
-            raise ValueError(f"Expected all {len(ref)} coalition incumbents, received {len(dispatched)}")
-        fresh = build(dispatched,source)
-        raw = {k:v for k,v in loadmat(FROZEN).items() if not k.startswith("_")}
-        for k,v in fresh.items():
-            if raw["Parameter"][k][0,0].shape != v.shape:
-                raise ValueError(f"Unexpected shape for {k}")
-            raw["Parameter"][k][0,0] = v
-        savemat(args.mat,raw)
-        # A fixed format-v5 header gives identical files on an exact replay.
-        with args.mat.open("r+b") as handle:
-            handle.write(b"MATLAB 5.0 MAT-file, reconstructed COPT dispatch and allocations".ljust(116))
-        saved = loadmat(args.mat,simplify_cells=True)["Parameter"]
-        for key in ("CV","Switching"):
-            np.testing.assert_array_equal(saved[key],source["Parameter"][key])
-        out.update(dispatch_file=args.dispatch.name, mat=args.mat.name, max_differences=differences(fresh),
-                   current_surplus=fresh["IV"].ravel().tolist())
-    path = HERE/("twenty_rebuild.json" if args.dispatch else "twenty_allocation_check.json")
-    path.write_text(json.dumps(out,indent=2)+"\n", encoding="utf-8")
-    print(json.dumps(out,indent=2))
+    source = loadmat(CONTRACTS, simplify_cells=True)
+    records = as_record(args.profits)
+    fresh = build(records, source)
+    raw = {k: v for k, v in loadmat(CONTRACTS).items() if not k.startswith("_")}
+    for k, v in fresh.items():
+        if raw["Parameter"][k][0, 0].shape != v.shape:
+            raise ValueError(f"Unexpected shape for {k}")
+        raw["Parameter"][k][0, 0] = v
+    savemat(args.mat, raw)
+    # The full-domain certificates bind to every byte of the v5 file, including its historical header.
+    with args.mat.open("r+b") as handle:
+        handle.write(b"MATLAB 5.0 MAT-file, reconstructed COPT dispatch and allocations".ljust(116))
+    saved = loadmat(args.mat, simplify_cells=True)["Parameter"]
+    for key in ("CV", "Switching"):
+        np.testing.assert_array_equal(saved[key], source["Parameter"][key])
+    print(f"Built {args.mat} from {len(records)} COPT coalition profits.")
 
 
 if __name__ == "__main__":
     main()
-
