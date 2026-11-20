@@ -1,0 +1,43 @@
+{
+  "first_pass_conflicting_lower": 40,
+  "first_pass_undecided": 7,
+  "presolve_off_retries": 47,
+  "independent_second_pass": 1278,
+  "groups": [
+    {
+      "family": "expiry",
+      "total": 1280,
+      "within": 182,
+      "excluded": 1098,
+      "unresolved": 0
+    },
+    {
+      "family": "ages",
+      "total": 2000,
+      "within": 880,
+      "excluded": 1120,
+      "unresolved": 0
+    },
+    {
+      "family": "resim",
+      "total": 11008,
+      "within": 1647,
+      "excluded": 9361,
+      "unresolved": 0
+    }
+  ],
+  "discrepancy_rows": [],
+  "method": "COPT rule-enhanced CCG plus complete rational best-response checks at unrounded candidate ratios.",
+  "independent_audit": [
+    {
+      "audit": "excluded",
+      "copt": "excluded",
+      "count": 11579
+    },
+    {
+      "audit": "within",
+      "copt": "within",
+      "count": 2709
+    }
+  ]
+}

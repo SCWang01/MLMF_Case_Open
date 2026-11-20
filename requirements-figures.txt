@@ -1,0 +1,4 @@
+# Environment used for the published case figures (Python 3.12).
+numpy==1.26.4
+scipy==1.17.1
+matplotlib==3.9.2
